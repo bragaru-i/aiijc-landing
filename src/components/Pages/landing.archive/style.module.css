@@ -1,0 +1,35 @@
+.landing {
+    --color-green: #72ff72;
+    --width-container: 1270px;
+    --padding-container-right-left: 32px;
+    --padding-container: 0 var(--padding-container-right-left);
+    --transition-duration: 0.2s;
+}
+
+.header {
+    border-bottom: 0 !important;
+}
+
+.header :global(.container) {
+    padding-left: var(--padding-container-right-left) !important;
+}
+
+.header:not(:global(.burgerOpened)) :global(.container .logo) {
+    padding-left: unset;
+}
+
+.header :global(.container) {
+    padding-left: var(--padding-container-right-left) !important;
+}
+
+@media (max-width: 768px) {
+    .landing :global(.hide-on-mobile) {
+        display: none;
+    }
+}
+
+@media (max-width: 410px) {
+    .landing {
+        --padding-container-right-left: 16px;
+    }
+}

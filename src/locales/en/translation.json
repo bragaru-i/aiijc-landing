@@ -1,0 +1,591 @@
+{
+    "buttons": {
+        "sendLetter": "Send email",
+        "sendRestoreLetter": "Send verification code",
+        "send": "Send",
+        "Participate": "Participate",
+        "LogIn": "Login",
+        "toLogIn": "Log in",
+        "Registration": "Sign up",
+        "LogOut": "Log Out",
+        "back": "Back",
+        "ok": "Ok",
+        "activate": "Activate",
+        "save": "Save",
+        "getKnown": "Learn more",
+        "showAll" : "Show All",
+        "hideAll":"Hide All",
+        "selectThisTrack": "Select this Track",
+        "myTeamTrack":"My team's track"
+    },
+    "errors": {
+        "error": "Error!",
+        "unknown": "Unknown error",
+        "offline": "No connection to server. Try later.",
+        "500": "Server connection error. Try later.",
+        "fieldEmpty": "The field is not filled"
+    },
+    "Main": {
+        "h1": "International Competition on Artificial Intelligence for Children",
+        "faqHeader": "FAQ",
+        "faqLink": "Go to FAQ"
+    },
+    "Header": {
+        "nav": {
+            "about": "About the contest",
+            "tasks": "Tasks",
+            "learning": "Lectures",
+            "webinar": "Webinars"
+        }
+    },
+    "Banner": {
+        "Tabs": {
+            "qualify": "1. Qualifying Round",
+            "team": "2. Team Round",
+            "offline": "3. Offline Round"
+        },
+        "titleH2": "Congratulations! <br/> You are now <span>registered</span> <br/> for the contest.",
+        "text": "The tasks will be made available on the website on 15 February.<br/>However, you can check out your first task and give it a try right now!",
+        "taskDescription": {
+            "href": "/static/dist/aiijc/docs/AIIJC_description_of_the_task_en.pdf",
+            "linkText": "Download the task"
+        },
+        "titleH2Stage2": "Start:<br /><span>15 April 2021</span>",
+        "textStage2": "Before the team round starts, you need to set up your team or join an existing one.<br />To do that, solve the tasks of the qualifying round.",
+        "titleH2Stage3": "The offline round<br />is taking place<br /><span>in Moscow</span> at the end of the year.",
+        "textStage3": "Following the team round, we will select best teams who will get together in Moscow for the finals. Ten winner teams will get 1,000,000 ₽ each."
+    },
+    "HorizontalRow": "International artificial intelligence competition for children",
+    "NotActivated": {
+        "titleH3": "Your account has not been activated yet.",
+        "text": "You do not have access to the tasks until your account is activated. <br/> Please see the FAQ for step-by-step instructions on how to activate your account in a couple of clicks.",
+        "link": "Activate my account"
+    },
+    "Form": {
+        "Registration": "Sign Up",
+        "LinkRestorePassword": "Restore access",
+        "LinkRegister": "Sign up now",
+        "NoAccount": "No account yet?",
+        "password": "Password",
+        "required": "Required field",
+        "passwordsDifferent": "Passwords do not match",
+        "invalidValue": "Invalid value",
+        "loading": "Loading...",
+        "enter3chars": "Enter first 3 chars",
+        "noData": "No data",
+        "login": "Username",
+        "name": "Name",
+        "lastName": "Surname",
+        "country": "Country",
+        "region": "Region",
+        "city": "City",
+        "birth": "Date of Birth",
+        "genderMale": "I'm a guy",
+        "genderFemale": "I'm a girl",
+        "passwordRepeat": "Confirm password",
+        "agreeWith": "I agree to",
+        "agreeWithRules": "I agree with",
+        "rules": "terms and conditions",
+        "policy": "privacy policy",
+        "agreeOn": "Consent to",
+        "personalData": "user agreement",
+        "dayValue": "DD",
+        "monthValue": "MM",
+        "yearValue": "YYYY",
+        "sendNewCode": "Resend code",
+        "agree_to_all": "I agree to <a href=\"/en/faq/legal/\"  target=\"_blank\" onclick=\"event.stopPropagation()\">the Terms and Conditions</a>, <a href=\"https://cups.mail.ru/en/faq/legal/privacy/\" target=\"_blank\" onclick=\"event.stopPropagation()\">Privacy Policy</a> and <a href=\"https://cups.mail.ru/en/faq/legal/ua/\" target=\"_blank\" onclick=\"event.stopPropagation()\">User Agreement</a>.",
+        "phone": "Phone"
+    },
+    "Footer": {
+        "support": "With the support of",
+        "copyright": "2021. All rights reserved. <br /> All materials belong to their copyright holder.",
+        "download": "Terms and Conditions",
+        "questions": "For all questions, please email:",
+        "questionsH4": "Still have questions?"
+    },
+    "FAQ": {
+        "list": {
+            "restoreActivate": "Restore access and activate account",
+            "restorePassword": "Forgot password?",
+            "activateAccount": "I need to activate my account"
+        },
+        "restoreActivateTitle": "Restore access and activate account",
+        "activate": {
+            "stage1title": "My account has not been activated yet.",
+            "stage1text": "Enter your email address so that we could send you an activation link.",
+            "stage2title": "An email has been sent to you.",
+            "stage2text": "Please follow the link in the email to activate your account."
+        },
+        "FaqDialogRestore": {
+            "stage1": {
+                "title": "Forgot password?",
+                "text": "To recover your password, we need to verify your identity. We will send a verification code to your email address."
+            },
+            "stage2": {
+                "title": "Enter the code from the email",
+                "text": "We have sent a verification code to the provided email. <br/> Enter it to proceed to the next step."
+            },
+            "stage3": {
+                "title": "Enter your new password",
+                "newPassword": "New password",
+                "newPasswordRepeat": "Confirm your new password"
+            },
+            "stage4": {
+                "title": "Password reset successfully",
+                "text": "Congratulations! You can log in to the contest website now."
+            }
+        }
+    },
+    "SignUp": {
+        "code": "Code from the email",
+        "codeExpiredAt": "Valid until",
+        "ActivationModal": {
+            "header": "Activation",
+            "helpText": "To confirm your registration for the contest, you need to activate your account by entering the code sent to your email.",
+            "noCode": "Not in inbox or spam folder? Please see",
+            "noCodeSupport": "or email us at:"
+        },
+        "EmailExistsModal": {
+            "header": "We found your email address in our database ",
+            "helpText": "We found the account registered with the provided email address. You can sign up using your credentials or restore access to your account. "
+        }
+    },
+    "VerificationModal": {
+        "header": "Log in (Step 2)",
+        "helpText": "We have sent you an SMS-code to verify your account",
+        "secondaryText": "Didn't receive the code? Get us know:",
+        "codeExpiredAt": "Valid til",
+        "code": "SMS-code",
+        "authButton": "Verify",
+        "codeNotWorks": "The released code is no longer valid"
+    },
+
+    "Landing": {
+        "Nav": {
+            "Button": "Register now",
+            "AuthButton": "Log in",
+            "ModalHeader": "Log In"
+        },
+        "Contest": {
+            "Header": "Artificial intelligence international </br> Junior Contest </p>"
+        },
+        "ContestTriangle": {
+            "Header1": "Start",
+            "Header2": "Prizes worth",
+            "Button": "Register now",
+            "Month": "FEBRUARY",
+            "Prize": "€ 100 000 <span>*</span>"
+        },
+        "Audience": {
+            "Header": "Who is the </br> Contest For?",
+            "Card1Title": "Kids and teenagers  </br>  under 18",
+            "Card1Subtitle": "The contest is open to school students in any grade.",
+            "Card2Title": "Those interested </br> in AI",
+            "Card2Subtitle": "School knowledge is sufficient to participate. We will teach you the rest along the line.",
+            "Card3Title": "People from across </br>the globe",
+            "Card3Subtitle": "No matter where you are, location is not going to get in the way of you fighting for the top prize."
+        },
+        "Stages": {
+            "Header": "Contest Rounds",
+            "Point1Title": "Until 30 June 2021",
+            "Point1Subtitle": "Qualifying round",
+            "Point1Text": "Individual participation that involves getting to know task types and learning new approaches to solving non-standard problems.",
+            "Point2Title": "15 April – 31 July 2021",
+            "Point2Subtitle": "Team round",
+            "Point2Text": "Building teams, choosing one of ten contest domains, and fighting to get into the final.",
+            "Point3Title": "End of 2021",
+            "Point3Subtitle": "Offline round",
+            "Point3Text": "Top 50 teams get together in Moscow. Transport and accommodation costs are covered by the contest."
+        },
+        "StagesPrize": {
+            "Commands": "Each of ten </br> winner teams</br> gets more than </br>€ 10 000<span>*</span> ",
+            "Offer": "Apply now to be among the first </br> to get started with the tasks!",
+            "Button": "Register now"
+        },
+        "Questions": {
+            "Header": "FAQ",
+            "Item1Title": "How hard are the tasks that I will have to deal with?",
+            "Item1Text": "You will need high school level of knowledge to solve most of the tasks. Again, we have prepared guides, video tutorials, and lectures that will help you to quickly find the missing information.",
+            "Item2Title": "How much time will I have to solve the tasks?",
+            "Item2Text": "You can get started with the tasks anytime before the round is over. After the deadline, solutions cannot be submitted anymore.",
+            "Item3Title": "What is the qualifying round aimed at?",
+            "Item3Text": "The qualifying round is your chance to get an idea of the tasks and to prove yourself among other participants. This will help you to create your dream team or join an existing group.<br/><br/>If you participate with your friends, each one of you will have to upload your individual solutions for the qualifying round first in order to get into the next one. During the second round, you can team up and work on the tasks together.",
+            "Item4Title": "How do we build teams?",
+            "Item4Text": "Building teams of 3 to 5 people takes place before the second round starts. Each of the participants can set up their own team or join an existing one.",
+            "Item5Title": "How are winners determined?",
+            "Item5Text": "Best teams in 10 domains make it to the offline round. Each team has to perform a final task together, which is then evaluated by the judging panel. The gold winners in each domain will be announced as the winners of the contest. For more details, please read the Contest Regulations."
+        },
+        "Partners": {
+            "Header": "Partners"
+        },
+        "Footer": {
+            "Header": "Still have questions?",
+            "Subheader": "For any questions, please email us at ",
+            "Copyright": "2021. All rights reserved.",
+            "CopyrightExtra": "All materials belong to their copyright holder.",
+            "Rules": "Terms and Conditions",
+            "FaqLink": "FAQ",
+            "MadeBy": "Supported by ",
+            "Details": "* the amount of the prize fund in euros is indicated at the exchange rate in effect on the date of the announcement of the competition (1.02.21). The amount is subject to recalculation depending on the euro exchange rate in effect on the date of summing up the results of the competition. "
+        }
+    },
+    "Helmet": {
+        "RestoreTitle": "Restore Password",
+        "RestoreAccess": "Restore Access",
+        "ActivateAccount": "Activate Account",
+        "MetaTitle": "AIIJC – Artificial Intelligence International Junior Contest",
+        "MetaDesc": "We have prepared a bunch of interesting tasks for you. Join our contest now!"
+    },
+
+    "Page404": {
+        "subTitle": "Not found",
+        "back": "Home"
+    },
+    "TaskList": {
+        "title": "All tasks",
+        "taskInfo": {
+            "uploaded": "Number of solutions uploaded:",
+            "bestRate": "Best result:",
+            "moreInfoLink": "Learn more"
+        },
+        "progress": {
+            "title": "Progress",
+            "innerTitle": "Qualifying round",
+            "qualification": {
+                "title": "Complete the qualification",
+                "text": "To complete the qualifying round, you need to meet the passing score in one of the task."
+            },
+            "thresholdLabel": "Passing score:",
+            "bestScoreLabel": "Your result:",
+
+            "descriptionTitleProfile": "Unlock your profile",
+            "descriptionTitleProfileUnlocked": "Profile unlocked!",
+            "descriptionTitleProfileUnlockedAndFull": "Congratulations!",
+            "descriptionText": "To participate in the team round, you need to unlock your profile. To do this, you need to get parents’ consent for your participation in the contest.",
+            "descriptionTextProfileUnlocked": "Congratulations! Now you can edit your profile to participate in the team round.",
+            "descriptionTextProfileUnlockedAndFull": "You are getting really close to participation in the team round. We will publish tasks for this round twice a week so that you could get an idea of them beforehand.<br /><br />You will be able to start solving these tasks after 30 April when building teams becomes available. Up until then, you can keep improving your result for the tasks already available.",
+            "ratingPos": "Your rating:"
+        },
+        "TaskStatus": {
+            "active": "Active",
+            "available": "Available for review"
+        },
+        "noTasks": "No tasks."
+    },
+    "TaskDetail": {
+        "navigationHomeLink": "Qualifying round",
+        "dateCompletion": "Completion date",
+        "nextTask": "Next task",
+        "taskContent": {
+            "description": "Conditions",
+            "data": "Data",
+            "download": "Download"
+        },
+        "teamTermNotification1" : "To select a track your team should have from 3 to 5 members.",
+        "teamTermNotification2" : "Solution will be uploaded for all the team! <span> Please kindly inform and advice with your team about solution uploading. Further changes will be impossible. </span> "
+    },
+    "TaskTabs": {
+        "description": "Task description",
+        "upload": "Upload solution",
+        "rating": "Rating"
+    },
+    "Workarea": {
+        "uploadSolution": "Upload solution",
+        "attemptsForToday": "Number of attempts left for today:",
+        "uploadedSolutions": "Uploaded solutions",
+        "mobileMockText": "Solutions can be only uploaded and viewed from the computer.",
+        "emptyList": {
+            "noLoaded": "You have not uploaded any solutions yet."
+        },
+        "card": {
+            "uploaded": "Upload date:",
+            "unknownError": "Unknown error",
+            "checking": "Under process",
+            "result": "Result:",
+            "best": "Best solution",
+            "errorLink": "Show error log"
+        }
+    },
+    "Profile":{
+        "parentalAccept": "Parents’ consent confirmation",
+        "my":"My profile",
+        "social": "Social media",
+        "savedMsg": "Saved!",
+        "save": "Save",
+        "edit": "Edit",
+        "settings": "Settings",
+        "subscribesFetchError": "Error! Failed to load the list of subscriptions.",
+        "subscribes": "Newsletters",
+        "subscribesHelp": "Here you can opt in and out of newsletters sent to your email.",
+        "required": "This field is required.",
+        "passNotEqual": "Passwords do not match",
+        "oldPassword": "Current password",
+        "newPassword": "New password",
+        "confirmPassword": "Confirm new password",
+        "changePassword": "Change password",
+        "changePasswordSuccessMsg": "Password reset successfully!",
+        "lastName": "Last name",
+        "firstName": "First name",
+        "login": "Login",
+        "birth": "Date of birth",
+        "country": "Country",
+        "city": "City",
+        "aboutLabel": "About me (free-form)",
+        "address": "Address",
+        "about": "About me",
+        "withoutName": "No name specified",
+        "generalInfo": "User info",
+        "emptyCardHeader": "Participant’s profile has not been filled out.",
+        "emptyCardText": "To get access to the team round, you need to fill out user info so that other participants could view your profile.",
+        "emptyCardBtn": "Edit profile",
+        "Avatar": {
+            "upload": "Upload photo",
+            "edit": "Change thumbnail",
+            "delete": "Delete",
+            "onFileLimit1":"Maximum file size exceeds:",
+            "onFileLimit2": "Please edit it, or try to load another one"
+
+        },
+        "ProfileAvatarUploadConnectionError": "Error connecting to server. Please check connection",
+        "ProfileAvatarUploadLimitError": "Limit of data modification attempts exceeded. Please try again later",
+        "Private": {
+            "title": "Privacy settings",
+            "info": "Here you can set what other users will see in your profile. You can also set your profile to completely private.",
+            "firstName": "First name",
+            "lastName": "Last name",
+            "socialMedia": "Social media",
+            "userextra": "About me",
+            "birth": "Date of birth",
+            "privateAccount": "Closed account",
+            "privateAccountInfo": "Only login name and achievements can be viewed by other users."
+        }
+    },
+    "SolutionUploader": {
+        "submitHandlerError": "Load error!",
+        "dropState": {
+            "drop": {
+                "prompt1": "Drag and drop or",
+                "prompt2": "select file*",
+                "notion": "",
+                "format": "only."
+            },
+            "loading": "Loading...",
+            "send": {
+                "sendedMsg": "Solution submitted!",
+                "alert": "No more solutions can be uploaded or submitted until the check is over."
+            },
+            "notAllowed": "Solutions upload is unavailable",
+            "form": {
+                "comment": "Your comment",
+                "ButtonText": "Submit solution"
+            }
+        },
+        "checkFileFunc": {
+            "error": "Error!",
+            "format": "only.",
+            "errorFile": "Error! File cannot exceed 50 MB."
+        }
+    },
+    "Rating": {
+        "filterPerPage": "Show by:",
+        "noRating": "Rating not yet formed",
+        "myPlaceLink": "My place",
+        "participant": "Participant",
+        "result": "Result",
+        "empty": "The results will be generated when the teams are able to upload solutions."
+    },
+    "Learning": {
+        "lang": "Language",
+        "type": "Type",
+        "types": {
+            "all": "All",
+            "book": "Book",
+            "course": "Course",
+            "video": "Video",
+            "article": "Article",
+            "game": "Game",
+            "other": "Other",
+            "application": "Application"
+        },
+        "level": {
+            "BEGINNER": "Beginner",
+            "MEDIUM": "Medium",
+            "HARD": "Hard"
+        },
+        "cost": {
+            "cost": "Paid",
+            "noCost": "Free"
+        },
+        "noData":"No lectures found for this section"
+    },
+    "Webinar": {
+        "cat": {
+            "category": "Category",
+            "nearest": "Closest",
+            "future": "Future",
+            "past": "Past"
+        },
+        "notFound": "Webinars not found",
+        "speaker": "Speaker",
+        "goToWebinar": "Go to webinar",
+        "msk": "MSK"
+     },
+    "Verification": {
+        "successTitle": "Profile unlocked!",
+        "startVerificationBtn": "Confirm parents’ consent",
+        "title": "Parents’ consent confirmation",
+        "parentPhone": "Parent’s phone number",
+        "text": "To further participate in the contest, your parents need to agree to the documents attached below. To do this, provide one of your parents’ phone number and enter verification code from the SMS message.",
+        "SMStext": "We sent an SMS with a confirmation code to the specified phone number. Enter it below to be able to edit your profile.",
+        "successText": "Congratulations! Now you can edit your profile to participate in the team round.",
+        "sendSMSBtn": "Send an SMS with a code",
+        "agreementBtn": "Confirm consent",
+        "supportText": "Haven’t received a code?<br />Please, contact us at",
+        "editProfileBtn": "Edit profile",
+        "Links": {
+            "termsAgreement": "I have read and agree to <a href=\"/en/faq/legal\" target=\"_blank\" onclick=\"event.stopPropagation()\">the Contest Terms and Conditions</a>",
+            "policyAgreement": "I have read and agree to <a href=\"/static/dist/aiijc/docs/2/Personal_data_privacy_policy_en.pdf\" target=\"_blank\" onclick=\"event.stopPropagation()\">Personal Data Privacy Policy</a>",
+            "newslettersAgreement": "I agree to <a href=\"/static/dist/aiijc/docs/3/Consent_to_receving_newsletters_en.pdf\" target=\"_blank\" onclick=\"event.stopPropagation()\">receiving newsletters</a>",
+            "personalDataAgreement": "I agree to <a href=\"/static/dist/aiijc/docs/4/Consent_to_personal_data_processing_for_contest_participants_en.pdf\" target=\"_blank\" onclick=\"event.stopPropagation()\">Personal Data Processing for Contest Participants</a>"
+        }
+    },
+    "SocialLinks": {
+        "text": "Join to communicate"
+    },
+
+    "teams": {
+        "fetchError": "Failed to upload team information",
+        "my": "My team",
+        "invitations": "Invitations from teams",
+        "newLeader": "New captain in the team!",
+        "successLeave": "You have successfully left the team",
+        "successKick": "User has been excluded from the team",
+        "addressDefault": "Address not specified",
+        "leader": "Captain",
+        "setLeader": "Make a captain",
+        "deleteUser": "Cross off the team’s list",
+        "leave": "Leave the team",
+        "birth": "Birthday",
+        "address": "Residence address",
+        "default": "Not filled",
+        "about": "About",
+        "countParticipantsLabel": "In the team",
+        "countParticipants_1": "participant",
+        "countParticipants_2": "participants",
+        "countParticipants_5": "participants",
+        "form": {
+            "deleteTeam": "Disband the team",
+            "successDeleteTeam": "The team was successfully disbanded",
+            "updateHeader": "Edit the team",
+            "createHeader": "Build a team",
+            "nameLabel": "Team name",
+            "countryLabel": "Country",
+            "cityLabel": "City",
+            "detailsLabel": "About (up to 1000 characters)",
+            "canReceiveRequestsLabel": "Accept applications from participants",
+            "createSubmitBtn": "Build a team",
+            "updateSubmitBtn": "Save the team",
+            "faq": "Please note that the information you provide here should comply with the contest regulations specified in the corresponding section of",
+            "deleteTeamModal": {
+                "header": "Want to disband the team?",
+                "text": "All the participants will be crossed off the team’s list. Your results within the track will be annulled.",
+                "submitBtn": "Yes",
+                "closeBtn": "No"
+            }
+        },
+        "createdModal": {
+            "header": "Team has been built!",
+            "text": "Congratulations! Now you can start looking for participants who will join your team.",
+            "searchLink": "Search for participants"
+        },
+        "canReceiveRequestsLabel": "Accept applications from participants",
+        "nameDefault": "Name is required",
+        "descriptionDefault": "Description is required",
+        "search": "Search for participants",
+        "limit": {
+            "text": "The number of invitations is limited.<br/> You can invite",
+            "person": {
+                "one": "person",
+                "two": "persons",
+                "five": "persons"
+            }
+        },
+        "inDevelopHeading": "In developing",
+        "inDevelopText": "This section is under construction",
+        "menu": {
+            "editLink": "Edit my team",
+            "help": "Learn more about opportunities of team work by following the"
+        },
+        "canBeInvitedInTeamsLabel": "I want to receive invitations to teams",
+        "empty": {
+            "heading": "You don’t have a team yet.",
+            "text": "You can join an already existing team by using the \"Search\" section. Or you can try to build your own team!",
+            "createLink": "Build a team",
+            "updateLink": "Find a team",
+            "successWant": "From now on, you can receive invitations to teams",
+            "successNotWant": "You will not receive invitations to teams anymore"
+        },
+        "requestsWant": "From now on,  participants can apply to join your team",
+        "requestsNotWant": "You will not receive applications to join your team anymore",
+        "deleteRequestModal": {
+            "header": "Want to cancel the invitation?",
+            "text": "You can invite the participant again by going to the participants search page."
+        },
+        "leaveModal": {
+            "header": "Want to leave the team?",
+            "text": "You can find a new team that you would like to join for the team round."
+        },
+        "deleteUserModal": {
+            "header": "Want to cross the participant off the team’s list?",
+            "text": "The participant will leave the team. You can invite them again by going to the participants search section."
+        },
+        "setLeaderModal": {
+            "header": "Want to make the participant a captain?",
+            "text": "After you do this, you become a regular team member, and the team leadership goes to another participant."
+        },
+        "SearchUsers": {
+            "requestCreated": "Participant has been invited to the team",
+            "requestDeleted": "Invitation has been canceled",
+            "inviteBtn": "Invite",
+            "cancelInviteBtn": "Cancel invitation",
+            "foundCnt": "Participants found",
+            "resetFilters": "Reset all filters",
+            "noUsers": "On your request nothing has been found",
+            "fetchRequestsFailed": "Failed to load the list of invitations",
+            "fetchUsersFailed": "Failed to load the list of users"
+        },
+        "SearchForm": {
+            "byName": "Search by name",
+            "byAge": "Age",
+            "submitBtn": "Search"
+        },
+        "Invitations": {
+            "inviteAccepted": "Invitation successfully accepted",
+            "inviteDeleted": "Invitation successfully canceled",
+            "acceptBtn": "Join",
+            "declineBtn": "Decline",
+            "hideLineupBtn": "Hide the team’s line-up",
+            "showLineupBtn": "Show the team’s line-up",
+            "myRequestsError": "Failed to load the list of invitations",
+            "title": "Invitations from teams",
+            "nothingText": "You haven’t been invited to any teams yet",
+            "emptyTeamText": "No participants in the team",
+            "limit": {
+                "from": "from",
+                "one": "participant",
+                "two": "participants",
+                "many": "participants"
+            }
+        },
+        "TeamInvitations": {
+            "title": "Invitations to the team",
+            "noInvitations": "No invitations to your team yet"
+        }
+    },
+ "TrackModal":{
+    "heading": "Track Select",
+    "body":"You will not be able to choose another track until championship ends.",
+    "success":"Registration successful to this track",
+    "error" : "Something went wrong! Please try again later!"
+ }
+}

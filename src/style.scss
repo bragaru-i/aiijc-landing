@@ -1,0 +1,560 @@
+html, body, #root {
+    height: 100%;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+@font-face {
+    font-family: 'Halunke CY';
+    src: url('/static/dist/aiijc/fonts/Halunke-CY.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/static/dist/aiijc/fonts/Gilroy/eot/Gilroy-Regular.eot');
+    src: url('/static/dist/aiijc/fonts/Gilroy/woff/Gilroy-Regular.woff') format('woff'),
+    url('/static/fonts/Gilroy/ttf/Gilroy-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/static/dist/aiijc/fonts/Gilroy/eot/Gilroy-Bold.eot');
+    src: url('/static/dist/aiijc/fonts/Gilroy/woff/Gilroy-Bold.woff') format('woff'),
+    url('/static/dist/aiijc/fonts/Gilroy/ttf/Gilroy-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/static/dist/aiijc/fonts/Gilroy/eot/Gilroy-Medium.eot');
+    src: url('/static/dist/aiijc/fonts/Gilroy/woff/Gilroy-Medium.woff') format('woff'),
+    url('/static/dist/aiijc/fonts/Gilroy/ttf/Gilroy-Medium.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('/static/fonts/cert_fonts/Proxima-Nova-Semibold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('/static/fonts/cert_fonts/Proxima-Nova-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* NEW FONTS: NEKST FAMILY*/
+@font-face {
+    font-family: 'Nekst';
+    src: url('/static/dist/aiijc/fonts/Nekst/woff2/Nekst-Regular-Web.woff2') format('woff2'),
+    url('/static/dist/aiijc/fonts/Nekst/woff/Nekst-Regular-Web.woff') format('woff'),
+    url('/static/dist/aiijc/fonts/Nekst/eot/Nekst-Regular-Web.eot'),
+    url('/static/dist/aiijc/fonts/Nekst/ttf/Nekst-Regular-Web.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nekst';
+    src: url('/static/dist/aiijc/fonts/Nekst/woff2/Nekst-Medium-Web.woff2') format('woff2'),
+    url('/static/dist/aiijc/fonts/Nekst/woff/Nekst-Medium-Web.woff') format('woff'),
+    url('/static/dist/aiijc/fonts/Nekst/eot/Nekst-Medium-Web.eot'),
+    url('/static/dist/aiijc/fonts/Nekst/ttf/Nekst-Medium-Web.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nekst';
+    src: url('/static/dist/aiijc/fonts/Nekst/woff2/Nekst-SemiBold-Web.woff2') format('woff2'),
+    url('/static/dist/aiijc/fonts/Nekst/woff/Nekst-SemiBold-Web.woff') format('woff'),
+    url('/static/dist/aiijc/fonts/Nekst/eot/Nekst-SemiBold-Web.eot'),
+    url('/static/dist/aiijc/fonts/Nekst/ttf/Nekst-SemiBold-Web.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nekst';
+    src: url('/static/dist/aiijc/fonts/Nekst/woff2/Nekst-Bold-Web.woff2') format('woff2'),
+    url('/static/dist/aiijc/fonts/Nekst/woff/Nekst-Bold-Web.woff') format('woff'),
+    url('/static/dist/aiijc/fonts/Nekst/eot/Nekst-Bold-Web.eot'),
+    url('/static/dist/aiijc/fonts/Nekst/ttf/Nekst-Bold-Web.ttf') format('truetype');
+
+    font-weight: 700;
+    font-style: normal;
+}
+
+body {
+    font-family: Nekst, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+ul,
+ol {
+    margin: 15px 0;
+    padding-left: 20px;
+}
+
+img {
+    max-width: 100%;
+}
+
+pre {
+    overflow-x: auto;
+    margin: 20px 0;
+    padding: 15px 20px;
+    background: #ffffff;
+    border: 1px solid #ebf0fe;
+
+    font-family: 'Nekst';
+    font-style: normal;
+    font-size: inherit;
+    line-height: inherit;
+    color: #919399;
+    font-weight: 600;
+
+    code {
+        font-family: 'Nekst', monospace;
+    }
+}
+
+details {
+    display: block;
+    margin-top: 20px;
+    padding: 15px 20px;
+    border: 1px solid #ebf0fe;
+    user-select: none;
+
+    .pre-title {
+        font-family: 'Nekst';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 1.25;
+        color: #000000;
+        cursor: pointer;
+    }
+
+    .pre-content {
+
+        overflow: hidden !important;
+        white-space: pre-wrap !important;
+        padding: 0 !important;
+        margin-top: 10px !important;
+
+        font-family: 'Nekst';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #000000;
+    }
+
+    summary {
+        outline: none;
+        display: block;
+        position: relative;
+
+        &::-webkit-details-marker {
+            display: none;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+            width: 24px;
+            height: 24px;
+            background-size: cover;
+            background-image: url('/static/dist/aiijc/images/chevron-down.svg');
+            background-repeat: no-repeat;
+        }
+    }
+
+    &[open] {
+        summary::after {
+            background-image: url('/static/dist/aiijc/images/chevron-top.svg');
+        }
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin-top: 16px;
+}
+
+h1 {
+    margin-top: 30px;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 80px;
+    line-height: 70px;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1;
+}
+
+h3 {
+    margin-top: 40px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.23;
+}
+
+h4 {
+    margin-top: 8px;
+    margin-bottom: 16px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+h5 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 0.9;
+}
+
+a {
+    color: #1a55f6;
+}
+
+label {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.13;
+    color: #989fb3;
+}
+
+input, textarea {
+    border-radius: 24px;
+    background: #FFFFFF;
+    border: 1px solid #DDE0EB;
+    height: 50px;
+    padding: 16px 20px;
+    font-weight: 600;
+
+    &:disabled {
+        opacity: 0.6;
+    }
+
+    &:focus {
+        border-radius: none;
+        outline: none;
+        border: 1px solid #1a55f6;
+    }
+
+    &[type='checkbox'] {
+        width: 16px;
+        height: 16px;
+        max-width: 16px;
+        max-height: 16px;
+        margin-right: 8px;
+        vertical-align: middle;
+        cursor: pointer;
+
+        &:focus {
+            outline: 1px solid #1a55f6;
+        }
+    }
+}
+
+.select {
+    .select__control {
+        border-radius: 24px;
+        background: #FFFFFF;
+        border: 1px solid #DDE0EB;
+        height: 50px;
+
+        &:hover {
+            border: 1px solid #ebf0fe;
+        }
+
+        &.select__control--is-focused {
+            border-radius: none;
+            outline: none;
+            border: 1px solid #ebf0fe;
+            box-shadow: none;
+        }
+
+        .select__value-container {
+            margin: 2px 20px;
+            padding: 0 !important;
+
+            .select__input {
+                height: auto;
+
+                input {
+                    border-radius: 0;
+                }
+            }
+        }
+
+        .select__indicators {
+            display: none;
+        }
+    }
+
+    .select__menu {
+        box-shadow: 0 4px 15px rgba(152, 159, 179, 0.1);
+        border: 1px solid #ebf0fe;
+        border-radius: 0;
+        margin-top: -1px;
+        margin-bottom: 0;
+
+        .select__menu-list {
+            padding: 0;
+        }
+
+        .select__menu-notice,
+        .select__option {
+            padding: 12px;
+        }
+    }
+
+
+    .select__menu-list, .select__menu {
+        border-bottom-left-radius: 24px;
+        border-bottom-right-radius: 24px;
+    }
+
+    .select__menu {
+        margin-top: -16px;
+        padding-top: 16px;
+        background: #F7F8FA;
+    }
+
+    .select__control {
+        position: relative;
+        z-index: 2;
+        cursor: text !important;
+    }
+
+    .select__control, .select__value-container {
+        font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+        .select__control, .select__value-container {
+            height: 40px;
+        }
+    }
+}
+
+.checkbox__label {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.57;
+    color: #919399;
+    cursor: pointer;
+    user-select: none;
+
+    &.active {
+        color: #919399;
+    }
+
+    a {
+        color: #919399;
+    }
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ebf0fe;
+    margin: 20px 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1260px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.list-no-style {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.btn {
+    display: block;
+    border: 1px solid #f0f0f0;
+    background-color: #fff;
+    border-radius: 33px;
+    outline: none;
+    font-family: 'Nekst';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    padding: 14px 50px;
+    color: #000000;
+    cursor: pointer;
+    transition: 500ms;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        outline: none;
+        color: #1a55f6;
+        border: 1px solid #1a55f6;
+    }
+
+    &.primary {
+        border: 1px solid #1e1ef7;
+        background-color: #1e1ef7;
+        color: #ffffff;
+
+        &:hover,
+        &:focus {
+            outline: none;
+            border: 1px solid #0f0fcd;
+            background-color: #0f0fcd;
+        }
+
+        &[disabled] {
+            background-color: #E6E9F2;
+            color: #919399;
+            border: 1px solid #E6E9F2;
+            cursor: default;
+        }
+    }
+
+    &.btn-block {
+        width: 100%;
+        margin-bottom: 8px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &.primary-outline {
+        color: #1a55f6;
+        border: 1px solid #1a55f6;
+    }
+}
+
+.back-btn {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1;
+    color: #989fb3;
+
+    &::before {
+        content: '';
+        display: block;
+        margin-right: 10px;
+        width: 18px;
+        height: 18px;
+        background-image: url('/static/dist/aiijc/images/chevron-left.svg');
+    }
+}
+
+.alertify-notifier {
+    cursor: pointer;
+
+    .ajs-message {
+        width: 390px !important;
+    }
+
+    .ajs-message.ajs-error {
+        background: #FFCBCB url('/static/dist/aiijc/images/ajs-error-close.svg') top right no-repeat !important;
+        box-shadow: 0px 0px 20px rgba(238, 14, 14, 0.1);
+        opacity: 1 !important;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.25;
+        color: #EE0E0E !important;
+    }
+
+    .ajs-message.ajs-success {
+        background: #B8DBBC !important;
+        box-shadow: 0px 2px 30px rgb(6 180 24 / 10%) !important;
+        font-family: Nekst !important;
+        font-style: normal !important;
+        font-weight: 600 !important;
+        font-size: 16px !important;
+        line-height: 24px !important;
+        color: #06B418 !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    h2 {
+        font-size: 26px;
+        line-height: 1;
+    }
+
+    h3 {
+        margin-top: 20px;
+        font-size: 22px !important;
+        line-height: 1.23;
+    }
+
+    h4 {
+        margin-top: 4px;
+        margin-bottom: 8px;
+        font-size: 18px;
+        line-height: 1.2;
+    }
+
+    input {
+        height: 40px;
+        /* padding: 16px 20px; */
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 9px 20px;
+    }
+}
+
+.spacer {
+    flex: 1;
+}

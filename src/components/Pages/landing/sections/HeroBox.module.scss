@@ -1,0 +1,287 @@
+$cellsize: 96px;
+$cellpadd: 95px;
+.herobox {
+    position: relative;
+    background-color: #000;
+    z-index: 6;
+    opacity: 1;
+    height: 576px;
+    h1 {
+        position: relative;
+        max-width: 324px;
+        margin: 7px 15px 0 15px;
+        color: #fff;
+        z-index: 10;
+        font-family: Nekst;
+        font-size: 40px;
+        line-height: 48px;
+        font-feature-settings: 'salt' on;
+        p {
+            padding-top: 32px;
+        }
+    }
+
+    background-size: $cellsize $cellsize;
+    background-image: repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent $cellpadd,
+            #5f5f5f $cellpadd,
+            #5f5f5f $cellsize
+        ),
+        repeating-linear-gradient(-90deg, transparent, transparent $cellpadd, #5f5f5f $cellpadd, #5f5f5f $cellsize);
+    background-position: cover;
+}
+.row {
+    margin: 0 auto;
+    width: 1200px;
+}
+.herobox {
+    &:before {
+        content: ' ';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+        z-index: -1;
+        background-image: url('/static/dist/aiijc/images/landing/herobox-background.svg'),
+            url('/static/dist/aiijc/images/herobox-background-2.svg');
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+.eclipseWrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.eclipse {
+    position: absolute;
+    width: 100%;
+
+    height: 80%;
+    left: 0;
+    top: 40%;
+    z-index: 2;
+    background-image: url('/static/dist/aiijc/images/landing/eclipse-1689.svg');
+    opacity: 0.6;
+    background-size: cover;
+    pointer-events: none;
+}
+.butterfly {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    width: 55%;
+    height: 561px;
+    bottom: 95px;
+    right: 0px;
+    z-index: 4;
+    background-image: url('/static/dist/aiijc/images/landing/herobox-butterfly.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cta {
+    display: flex;
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    width: 100%;
+    z-index: 8;
+}
+
+.starts {
+    display: flex;
+    flex-direction: column;
+    padding-top: 16px;
+    position: relative;
+    z-index: 4;
+
+    &-box {
+        font-family: Nekst;
+        font-style: normal;
+        font-weight: normal;
+        font-feature-settings: 'salt' on;
+        color: #fff;
+        padding: 7px 0 7px 12px;
+        background: #000000;
+        border: 1px solid #5f5f5f;
+        &:first-child {
+            margin-bottom: 16px;
+        }
+        &__item {
+            font-size: 40px;
+            line-height: 48px;
+            display: flex;
+            span {
+                font-size: 16px;
+                line-height: 24px;
+                vertical-align: top;
+                margin-left: -10px;
+            }
+            &--heading {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+
+@media (min-width: 650px) {
+    .herobox {
+        flex-direction: column;
+        height: 766px;
+        h1 {
+            font-size: 72px;
+            line-height: 96px;
+            margin: 19px 24px 0 24px;
+            max-width: 480px;
+            p {
+                display: none;
+                padding-top: 0;
+            }
+        }
+    }
+    .eclipse {
+        top: 60%;
+    }
+    .cta {
+        position: relative;
+        z-index: 6;
+        display: block;
+        padding-top: 60px;
+    }
+    .starts {
+        position: absolute;
+        left: 24px;
+        bottom: 0;
+        flex-direction: row;
+        transform: translateY(50%);
+        margin-left: 24px;
+
+        width: 100%;
+        padding-top: 0;
+        &-box {
+            padding: 12px 56px 41px 16px;
+            background-color: #fff;
+            color: #000000;
+            &:first-child {
+                margin-bottom: 0;
+                margin-right: 48px;
+            }
+            &__item {
+                font-size: 56px;
+                line-height: 64px;
+                span {
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+                &--heading {
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1260px) {
+    $cellsize-lg: 120px;
+    $cellpadd-lg: 119px;
+    .starts {
+        left: 0;
+    }
+
+    .herobox {
+        height: 719px;
+        background-size: $cellsize-lg $cellsize-lg;
+        background-image: repeating-linear-gradient(
+                0deg,
+                transparent,
+                transparent $cellpadd-lg,
+                #5f5f5f $cellpadd-lg,
+                #5f5f5f $cellsize-lg
+            ),
+            repeating-linear-gradient(
+                -90deg,
+                transparent,
+                transparent $cellpadd-lg,
+                #5f5f5f $cellpadd-lg,
+                #5f5f5f $cellsize-lg
+            );
+        background-position: cover;
+        h1 {
+            font-size: 88px;
+            line-height: 120px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-top: 25px;
+        }
+    }
+    .cta {
+        padding-top: 77px;
+    }
+    .starts {
+        position: absolute;
+        right: 0;
+        display: flex;
+        justify-content: flex-end;
+        &-box {
+            padding: 16px 117px 71px 24px;
+            background-color: #fff;
+            color: #000000;
+            height: 191px;
+            &:first-child {
+                margin-bottom: 0;
+                margin-right: 48px;
+            }
+            &__item {
+                font-size: 64px;
+                line-height: 72px;
+                &--heading {
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+            }
+        }
+        &-box:last-of-type {
+            width: 312px;
+            padding-right: unset;
+        }
+    }
+    .butterfly {
+        width: 40%;
+        margin-right: 42px;
+        bottom: 25px;
+    }
+}
+.hideSignup {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+@media (min-width: 1440px) {
+    .butterfly {
+        max-width: 600px;
+        left: 50%;
+    }
+}
+
+@media (max-width: 370px) {
+    .herobox {
+        h1 {
+            font-size: 35px;
+        }
+    }
+}

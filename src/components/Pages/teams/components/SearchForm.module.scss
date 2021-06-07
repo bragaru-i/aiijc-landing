@@ -1,0 +1,39 @@
+.form {
+    align-items: center;
+    margin-bottom: 12px;
+    display: grid;
+    grid-template-columns: 1fr 150px 150px;
+    grid-gap: 10px;
+
+    transform: translateX(-7%) scale(0.86);
+    width: 116%;
+
+    :global(.form__row), :global(.form__field input) {
+        flex-basis: 200px;
+        box-sizing: border-box;
+        margin-bottom: 0;
+    }
+
+    :global(.field__input) {
+        width: 100%;
+    }
+}
+
+.submitBtn {
+    padding-right: 0;
+    padding-left: 0;
+    border: none !important;
+}
+
+.countryWrapper {
+    z-index: 3;
+}
+
+@media (max-width: 768px) {
+    .form {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        transform: unset;
+        width: unset;
+    }
+}

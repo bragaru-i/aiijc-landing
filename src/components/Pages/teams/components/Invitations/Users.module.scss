@@ -1,0 +1,141 @@
+.avatar {
+    width: 40px;
+    height: auto;
+    margin-right: 15px;
+    border-radius: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.name {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.nameWr {
+    align-items: center;
+}
+
+.chevron {
+    &, path {
+        transition-duration: 0.3s;
+    }
+}
+
+.detailsIsOpened .chevron {
+    transform: rotate(180deg);
+
+    path {
+        fill: #0000FF;
+    }
+}
+
+.name, .address {
+    max-width: 190px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.address {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #909299;
+}
+
+.right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.users {
+    counter-reset: item;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 15px;
+    margin-bottom: 0;
+
+    .user {
+        display: flex;
+        flex-direction: column;
+        background: #FFFFFF;
+        border: 1px solid #E6E9F2;
+        margin-bottom: 5px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.top {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px 10px calc(20px - 3px);
+    position: relative;
+    cursor: pointer;
+    border-left: 3px solid transparent;
+}
+
+.bottom {
+    border-top: 1px solid #EDEFF5;
+    padding: 10px 20px;
+}
+
+.detailsList {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 22px;
+    color: #919399;
+    padding: 0;
+    margin: 0;
+
+    .detailsItem {
+        display: block;
+    }
+
+    .detailsLabel {
+        color: #B6B8BF;
+    }
+}
+
+.empty {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+@media (max-width: 768px) {
+    .bottom {
+        padding: 10px 20px;
+    }
+
+    .address, .name {
+        max-width: calc(100vw - 250px);
+    }
+
+    .nameWr {
+        grid-template-columns: auto;
+    }
+
+    .detailsList {
+        .detailsItem {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+
+        .detailsItem:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

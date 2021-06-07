@@ -1,0 +1,368 @@
+.socialLinksBlockMobile {
+    display: none;
+}
+
+.TaskDetail {
+    padding-top: 25px;
+    padding-bottom: 40px;
+
+    &.TaskDetailHeader {
+        padding-bottom: 0;
+    }
+
+    &.TaskDetailContent {
+        padding-top: 0;
+    }
+
+    .not-activated-container {
+        padding: 0 !important;
+    }
+
+    .navigation {
+        a, a:focus {
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 1.43;
+            color: #858da6;
+        }
+
+        a:hover {
+            color: #1a55f6;
+        }
+    }
+
+    h1 {
+        margin-top: 30px;
+        margin-bottom: 15px;
+
+        font-family: 'Nekst';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 1.43;
+        color: #000000;
+       
+        p {
+            font-size: 12px;
+            line-height: 18px;
+            margin-bottom: 5px;
+            @media (min-width: 768px) {
+                margin-bottom: 0;
+                font-size: 14px;
+                line-height: 22px;
+            }
+            @media(min-width:1024px){
+                font-size: 16px;
+                color: #A8AAB2;}
+        }
+    }
+
+    .subtitle {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+
+        .subtitleFinish {
+            margin-left: 40px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 1.43;
+            color: #858da6;
+
+            .date {
+                color: #000;
+            }
+        }
+
+        a.nextTask,
+        a.nextTask:focus {
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 1.43;
+            color: #919399;
+            display: flex !important;
+            align-items: center !important;
+            margin-left: auto;
+            position: absolute;
+            top: 95px;
+            right: 0;
+
+            svg {
+                margin-left: 20px;
+            }
+         
+        }
+        a.nextTask--extended,
+        a.nextTask--extended:focus{
+                top: 125px; 
+            }
+        a.nextTask--extended2,
+        a.nextTask--extended2:focus{
+                margin-top:80px; 
+            }
+        a.nextTask:hover {
+            color: #1E1EF7;
+        }
+
+        .socialLinksBlock {
+            margin-left: auto;
+        }
+    }
+
+    .taskContent {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 40px 0px;
+
+        .description {
+            border-right: 2px solid #DDE0EB;
+            padding-right: 58px;
+            width: 100%;
+            max-width: 778px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 1.57;
+        }
+
+        .data {
+            width: 100%;
+            max-width: 370px;
+
+            h5 {
+                margin-bottom: 20px;
+            }
+
+            .files {
+                .file {
+                    padding: 14px 20px;
+                    border: 2px solid #000000;
+
+                    &:not(:last-child) {
+                        margin-bottom: 10px;
+                    }
+
+                    .fileName {
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 1.5;
+                        margin-bottom: 25px;
+                    }
+
+                    a, a:focus {
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 1.14;
+                        text-decoration: none;
+                        display: flex !important;
+                        align-items: center !important;
+                        color: #919399;
+
+                        svg {
+                            margin-right: 10px;
+                        }
+                    }
+
+                    a.disabled {
+                        opacity: 0.5;
+                        pointer-events: none;
+                    }
+
+                    a:hover {
+                        color: #1E1EF7;
+                    }
+                }
+            }
+        }
+    }
+
+    &.TaskDetailHeaderBg {
+        margin-bottom: 30px;
+        background-position: center, center;
+        background-size: cover, cover;
+
+        h1 {
+            margin-top: 0;
+            color: #fff;
+        }
+
+        .navigation {
+            margin-bottom: 93px;
+            color: #fff;
+
+            a {
+                color: #fff !important;
+            }
+        }
+
+        .subtitle {
+            .subtitleFinish {
+                color: #AAACB3;
+                .date {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1250px) {
+    .TaskDetail {
+        .subtitle {
+            flex-wrap: wrap;
+
+            a.nextTask, a.nextTask:focus {
+                top: 0;
+                bottom: unset;
+                @media (min-width: 768px) and (max-width:1249px) {
+                    bottom: 8px;
+                    top:unset;
+                } 
+            }
+            .socialLinksBlock {
+                margin-left: 0;
+                margin-top: 20px;
+                width: 100%;
+            }
+        }
+        .taskContent {
+            padding-left: 0;
+            padding-right: 0;
+            border: none;
+
+            .description {
+                padding-right: 0 !important;
+                max-width: 100%;
+                border-right: none;
+            }
+    
+            .data {
+                margin-top: 30px;
+                max-width: 100%;
+
+                .files {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    flex-wrap: wrap;
+
+                    .file {
+                        width: calc(50% - 5px);
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .socialLinksBlockMobile {
+        display: flex;
+    }
+    .TaskDetail {
+        .subtitle {
+            flex-wrap: wrap;
+
+            .taskStatus {
+                order: 2;
+            }
+
+            .subtitleFinish {
+                order: 1;
+                margin-left: 0;
+                margin-bottom: 16px;
+                width: 100%;
+            }
+
+            a.nextTask, a.nextTask:focus  {
+                order: 3;
+                top: initial;
+                bottom: 0;
+                position: relative;
+                margin-left: 0;
+                margin-top: 8px;
+                width: 100%;
+            }
+
+            .socialLinksBlock {
+                display: none;
+            }
+        }
+        .taskContent {
+            /*.description {
+            }*/
+
+            .data {
+                .files {
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    .file {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 300px) {
+    .TaskDetail {
+        .subtitle {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            a.nextTask {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+.btn--task {
+    background: #06b418;
+    color: #fff;
+    max-width: 240px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px 0 12px 0;
+    margin-right: 30px;
+    @media (max-width: 1200px) {
+        font-size: 14px;
+        line-height: 24px;
+        max-width: 244px;
+        margin-right: 20px;
+        height: 34px;
+        padding: 8px 0;
+    }
+    @media (max-width: 767px) {
+        font-size: 12px;
+        line-height: 22px;
+        max-width: 100%;
+        margin-right: 0;
+        height: 30px;
+        padding: 8px 0 12px 0;
+        margin-bottom: 10px;
+
+    }
+    &:disabled {
+        background: #e6e9f2;
+        color: #909299;
+        pointer-events: none;
+    }
+
+    &_chosen {
+        background: #403f3e;
+        color: #06b418;
+        cursor: default;
+        pointer-events: none;
+    }
+}

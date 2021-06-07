@@ -1,0 +1,84 @@
+.btnContainer {
+    background: none;
+    color: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: none;
+    padding: none;
+    margin: none;
+    background: none;
+}
+/* btn sizes: */
+.btn {
+    &--m {
+        font-family: Nekst;
+        font-size: 14px;
+        line-height: 21px;
+        border-radius: 33px;
+        padding: 6px 24px 10px 24px;
+    }
+    &--lg {
+        font-family: Nekst;
+        font-size: 20px;
+        line-height: 24px;
+        padding: 18px 30px 22px 30px;
+        width: 100%;
+        border-radius: 53px;
+    }
+}
+
+/* btn variant: */
+
+.btn {
+    &--primary {
+        color: #ffffff;
+        background: #1e1ef7;
+        transition: all 0.3s;
+        &:hover {
+            background: #0f0fcd;
+        }
+        &:active {
+            background: #0f0fcd;
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .btn {
+        &--lg {
+            font-family: Nekst;
+            font-size: 16px;
+            line-height: 24px;
+            padding: 18px 30px 18px 30px;
+        }
+    }
+}
+
+@media (min-width: 650px) {
+    .btn {
+        &--lg {
+            padding: 18px 58px 22px 58px;
+            font-size: 20px;
+            line-height: 24px;
+            width: fit-content;
+        }
+        &--m {
+            padding: 7px 24px 9px 24px;
+            font-size: 18px;
+            line-height: 24px;
+        }
+    }
+}
+@media (min-width: 1260px) {
+    .btn {
+        &--lg {
+            padding: 18px 53px 22px 53px;
+         
+            width: fit-content;
+            font-size: 24px;
+            line-height: 32px;
+        }
+    }
+}

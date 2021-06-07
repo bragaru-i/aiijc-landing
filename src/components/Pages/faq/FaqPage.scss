@@ -1,0 +1,42 @@
+.faq-container {
+
+    min-height: 783px;
+    max-width: 860px;
+    margin: 0 auto;
+
+    padding: 30px 30px 70px;
+
+    h1 {
+        text-transform: none;
+        margin-top: 34px;
+        margin-bottom: 20px;
+
+        font-family: 'Nekst';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 1.43;
+        color: #000000;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}
+
+
+
+@media (max-width: 668px) {
+    .faq-container {
+        padding: 20px 15px 20px;
+
+        h1 {
+            font-size: 26px;
+            line-height: 1.08;
+            margin-top: 20px;
+            margin-bottom: 23px;
+        }
+    }
+
+    
+}

@@ -1,0 +1,193 @@
+.card {
+  border: 2px solid #000000;
+  padding: 19px 23px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+.cardError {
+  border: 2px solid #EE0E0E;
+}
+
+.card:last-child {
+  margin-bottom: 0;
+}
+
+.dateWrapper {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.date {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #1A55F6;
+}
+
+.result {
+  border-radius: 22px;
+  padding: 9px 15px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #858DA6;
+  background: #FBFCFE;
+  border: 1px solid #EBF0FE;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.score {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  color: #1A55F6;
+  margin-left: 5px;
+}
+
+.checkingWrapper {
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.checking {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  color: #858DA6;
+  margin-left: 10px;
+}
+
+.spinnerIcon {
+  animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.fileLink {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  transition-duration: 0.3s;
+  color: #858da6;
+
+  rect, path {
+    transition-duration: 0.3s;
+  }
+
+  &:hover {
+    color: #1a55f6;
+
+    rect {
+      fill: #1a55f6;
+    }
+
+    path {
+      stroke: #1a55f6;
+    }
+  }
+}
+
+.fileName {
+  margin-right: 15px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.error {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #EE0E0E;
+  white-space: pre-wrap;
+}
+
+.errorLink {
+  width: 100%;
+  margin-top: 5px;
+
+  a {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.43;
+    text-decoration-line: underline;
+    color: #F46464;
+  }
+}
+
+.chosen {
+  border: 2px solid #06B418;
+
+  .score {
+    color: #06B418;
+  }
+}
+
+.uploaded {
+  width: 50%;
+}
+.fileLinkWrapper {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.solution {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.best {
+  display: flex;
+  align-items: center;
+  margin-left: 22px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.71;
+  color: #06B418;
+}
+
+.best svg {
+  margin-right: 10px;
+}
+
+.comment {
+  width: 100%;
+  margin-top: 14px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #858DA6;
+  word-break: break-word;
+}
+

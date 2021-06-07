@@ -1,0 +1,180 @@
+.prize {
+    z-index: 2;
+    width: 100%;
+    height: 724px;
+    position: relative;
+    overflow: hidden;
+    transform: translateY(-60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #000;
+    &::before {
+        content: '';
+        z-index: 2;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url('/static/dist/aiijc/images/landing/herobox-background.svg'),
+            url('/static/dist/aiijc/images/landing/herobox-background-2.svg');
+        background-position: center;
+        background-size: cover;
+        opacity: 0.4;
+    }
+    &::after {
+        top:0;
+        left:0;
+        overflow: hidden;
+        content: '';
+        z-index: 1;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-image: url('/static/dist/aiijc/images/landing/prize-eclipse.png');
+
+        background-position: center;
+        background-size: cover;
+        opacity: 1;
+        filter: blur(150px);
+    }
+    &Card {
+        max-height: 512px;
+        height: 512px;
+
+        z-index: 5;
+        position: relative;
+        background: #000000;
+        border: 1px solid #fff;
+        box-sizing: border-box;
+        font-family: Nekst;
+        font-style: normal;
+        font-weight: normal;
+        color: #ffffff;
+        padding: 8px 16px 16px 16px;
+        &-text {
+            font-size: 40px;
+            line-height: 48px;
+            span {
+                display: none;
+            }
+        }
+
+        &-text2 {
+            margin-top: 22px;
+            font-size: 18px;
+            line-height: 24px;
+        }
+        &-img {
+            float: right;
+            transform: translate(16px, 10px);
+            width: 176px;
+            height: 176px;
+            background-image: url('/static/dist/aiijc/images/landing/art1.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .cta {
+            position: absolute;
+            left: 0;
+            bottom: -32px;
+            width: 100%;
+            padding: 0 16px;
+        }
+    }
+}
+.hideSignup {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+@media (min-width: 650px) {
+    .prize {
+        transform: translateY(-120px);
+        height: 570px;
+    }
+    .prizeCard {
+        height: 336px;
+        max-height: 336px;
+        padding: 10px 24px 0 24px;
+
+        &-text {
+            font-size: 56px;
+            line-height: 64px;
+
+            br:not(:nth-child(3)) {
+                display: none;
+            }
+        }
+        &-text2 {
+            font-size: 18px;
+            line-height: 24px;
+            br:first-child  {
+                display: none;
+            }
+            br:last-child{
+                display: block;
+            }
+        }
+        &-img {
+            position: absolute;
+            right: 24px;
+            bottom: -60px;
+        }
+    }
+}
+
+@media (min-width: 1260px) {
+    .prize {
+        height: 656px;
+        &Card {
+            position: relative;
+            height: 384px;
+            max-height: 384px;
+            padding: 10px 24px;
+            &-text {
+                span {
+                    display: inline-block;
+                    vertical-align: top;
+                    font-family: Nekst;
+                    font-size: 24px;
+                    line-height: 32px;
+                    margin-top: 4px;
+                }
+                font-size: 64px;
+                line-height: 72px;
+                max-width: 792px;
+                br:not(:nth-child(3)) {
+                    display: none;
+                }
+            }
+            &-text2 {
+                max-width: 422px;
+                font-size: 24px;
+                line-height: 32px;
+                margin-top: 44px;
+                br {
+                    display: none;
+                }
+            }
+            &-img {
+                position: absolute;
+                right: -70px;
+                bottom: -120px;
+                width: 440px;
+                height: 440px;
+                z-index: 2;
+            }
+            .cta {
+                position: absolute;
+                left: 0;
+                display: flex;
+                justify-content: center;
+                bottom: -36px;
+            }
+        }
+    }
+}
+
+

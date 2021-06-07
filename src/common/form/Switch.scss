@@ -1,0 +1,42 @@
+.switch {
+  .switch__jack-overlay {
+    display: inline-block;
+    width: 34px;
+    height: 20px;
+    text-align: center;
+    vertical-align: text-bottom;
+    margin: 0 16px;
+    background: #1A55F6;
+    cursor: pointer;
+
+    &.first {
+      text-align: left;
+    }
+
+    &.second {
+      text-align: right;
+    }
+
+    .switch__jack {
+      display: inline-block;
+      background: #FFFFFF;
+      width: 10px;
+      height: 10px;
+      margin: 5px;
+      cursor: pointer;
+    }
+  }
+
+  .switch__label {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    color: #989FB3;
+    cursor: pointer;
+
+    &.active {
+      color: #1A55F6;
+    }
+  }
+}

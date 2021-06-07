@@ -1,0 +1,252 @@
+.wrapper {
+  outline: none;
+
+  .dropContainer {
+    border-radius: 33px;
+    position: relative;
+    background: #F1F1FF;
+    height: 130px;
+    display: flex;
+    overflow: hidden;
+    outline: none;
+
+    &.dropError {
+      background: rgba(250, 27, 51, 0.05);
+    }
+
+    &.loaded {
+      background-color: #F0FAF2;
+    }
+  }
+
+  .dropContainerSend {
+    background: #E6F8E8;
+  }
+
+  .dropContainerNotAllow {
+    background: rgba(242, 153, 74, 0.1);
+  }
+
+  .dropInner {
+    border-radius: 26px;
+    margin: 10px;
+    width: 100%;
+    border: 1px dashed #365FF6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &.dropActive {
+      border-color: gray;
+    }
+  }
+
+  .dropError {
+    border-color: #ff3535;
+  }
+
+  .dropText {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #06B418;
+  }
+
+  .fileName {
+    max-width: 350px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .sendHeader {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    color: #06B418;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .prompt {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+
+    .promptAccent {
+      color: #1E1EF7;
+      text-decoration: underline;
+    }
+  }
+
+  .notion {
+    font-size: 15px;
+    color: #7a7a99;
+    margin-top: 10px;
+  }
+
+  .notionError {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    color: #EE0E0E;
+  }
+
+  .loadingText {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    transform: translateY(-50%) translateX(-50%);
+    top: 50%;
+    left: 50%;
+    color: #1E1EF7;
+  }
+
+  .loadedInner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #06B418;
+    margin: 10px;
+    border-radius: 26px;
+  }
+
+  .closeButton {
+    cursor: pointer;
+    padding: 5px;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+
+    &:hover .closeIcon path {
+      fill: #1a55f6;;
+    }
+
+    .closeIcon {
+      path {
+        transition-duration: 0.3s;
+      }
+    }
+  }
+
+  .sendInnerWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #4BC65D;
+    background: #E6F8E8;
+    border: 2px solid #06B418;
+    margin: 10px;
+    border-radius: 26px;
+  }
+
+  .sendInner {
+    display: flex;
+    align-items: center;
+  }
+
+  .notAllowInnerWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+    border: 2px solid #F2994A;
+    margin: 10px;
+    border-radius: 26px;
+  }
+
+  .notAllowInner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+
+  .notAllowMessage {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: rgba(242, 153, 74, 0.8);
+    text-align: center;
+  }
+
+  .notAllowHeader {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #F2994A;
+  }
+
+  .submitButton {
+    width: 100%;
+    margin-top: 25px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    transition-duration: 0.3s;
+  }
+
+  .spinnerIcon {
+    animation: spin 4s linear infinite;
+    margin-right: 15px;
+  }
+
+  .warningIcon, .successIcon {
+    margin-right: 10px;
+  }
+
+  .commentLabel {
+    display: block;
+    margin-top: 30px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.29;
+    color: #919399;
+  }
+
+  .commentTextarea {
+    display: block;
+    margin-top: 10px;
+    width: 100%;
+    min-height: 100px;
+    resize: none;
+    background: #FFFFFF;
+    border: 1px solid #DDE0EB;
+    border-radius: 33px;
+    padding: 12px 15px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  @keyframes spin {
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}

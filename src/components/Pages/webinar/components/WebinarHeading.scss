@@ -1,0 +1,16 @@
+.container-common {
+  .back-btn--common {
+    font-size: 12px;
+    line-height: 18px;
+    width: fit-content;
+  }
+}
+
+@media (min-width: 768px) {
+  .container-common {
+    .back-btn--common {
+      font-size: 14px;
+      line-height: 26px;
+    }
+  }
+}

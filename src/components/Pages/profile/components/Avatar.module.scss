@@ -1,0 +1,201 @@
+.container {
+    position: relative;
+}
+
+.avatar {
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    width: 120px;
+    height: 120px;
+    position: relative;
+    background: #fff;
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-position: revert;
+        background-repeat: unset;
+        background-size: unset;
+        top: 0;
+    }
+
+    .spinnerWrapper {
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.5);
+        top: 0;
+        height: 100%;
+        left: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .sk-circle {
+            margin: 0;
+        }
+    }
+}
+
+.avatar-change {
+    margin-top: 10px;
+    display: flex;
+    position: relative;
+
+    .camera {
+        border: 2px solid #d1d3db;
+        background: unset;
+        border-radius: 10px;
+        box-sizing: border-box;
+        width: 120px;
+        height: 40px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        outline: none;
+        cursor: pointer;
+    }
+}
+
+.avatar-btnNav {
+    list-style: none;
+    font-family: Nekst;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    li {
+        cursor: pointer;
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+        span {
+            padding-left: 16px;
+            display: flex;
+            width: 100%;
+        }
+    }
+
+    .upload-label {
+        cursor: pointer;
+        input {
+            display: none;
+        }
+        span {
+            font-family: Nekst;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 15px;
+        }
+    }
+}
+
+@media (max-width: 667px) {
+    .avatar-btnNav {
+        li {
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+@media (min-width: 668px) {
+    .upload-label {
+        color: #000;
+    }
+    .container {
+        width: 228px;
+        height: 228px;
+        position: relative;
+        overflow: hidden;
+        border: 2px solid #000000;
+        border-radius: 10px;
+    }
+    .avatar {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border: none;
+    }
+    .avatar-change {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin-top: 0;
+        width: 100%;
+
+        .camera {
+            width: 100%;
+            outline: none;
+            border: none;
+            border-radius: 0;
+            border-top: 2px solid #000000;
+            background: rgba(194, 196, 204, 0.8);
+        }
+    }
+    .disabled {
+        display: none;
+    }
+    .menuDesktop {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: rgba(133, 141, 166, 0.8);
+        .avatar-btnNav {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            align-items: flex-start;
+            padding-top: 25px;
+            padding-bottom: 30px;
+            li {
+                width: fit-content;
+            }
+            span {
+                padding-left: 20px;
+            }
+        }
+    }
+    .close {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        width: 228px;
+        height: 228px;
+    }
+    .avatar-change {
+        .camera {
+            height: 46px;
+        }
+    }
+
+    .avatar-btnNav {
+        font-size: 14px;
+        line-height: 22px;
+        color: black;
+
+        .upload-label span {
+            font-size: 14px;
+            line-height: 22px;
+        }
+        span:hover {
+            color: #1e1ef7;
+            width: fit-content;
+        }
+    }
+}

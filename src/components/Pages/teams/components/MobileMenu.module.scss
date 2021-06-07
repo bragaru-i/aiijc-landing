@@ -1,0 +1,146 @@
+.item {
+    display: block;
+    padding-bottom: 15px;
+    padding-top: 15px;
+
+    a {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        color: #909299;
+        text-decoration: none;
+        justify-content: space-between;
+        max-width: 350px;
+
+        &:global(.active) {
+            color: #1E1EF7;
+        }
+
+        .mobileInvitationsCounter {
+            height: 22px;
+            margin-left: 10px;
+            padding: 0 7px;
+            border-radius: 50%;
+            line-height: 20px;
+            background-color: #1E1EF7;
+            color: #fff;
+        }
+    }
+}
+
+:global(.header.loggined.burgerOpened .menu) {
+    ol.list {
+        margin-top: 15px;
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    &.menu {
+        padding-top: 16px;
+    }
+}
+
+.back {
+    margin-bottom: 20px;
+}
+
+.header {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 40px;
+    color: #000000;
+    margin: 0;
+}
+
+.edit {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 30px;
+    color: #909299;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    text-decoration: none;
+
+    &:global(.active) {
+        color: #1e1ef7;
+
+        svg path {
+            fill: #1e1ef7;
+        }
+    }
+}
+
+.editIcon {
+    width: 20px;
+    height: auto;
+    margin-left: 10px;
+}
+
+.help {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    background: #F5F6FA;
+    padding: 12px 20px;
+
+    &, a {
+        color: #909299;
+    }
+
+    a {
+        display: inline !important;
+    }
+}
+
+.headerWr {
+    display: flex;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #E6EAF5;
+    padding-bottom: 30px;
+    width: calc(100% + 2 * 31px);
+    position: relative;
+    left: -31px;
+    padding-right: 31px;
+    padding-left: 31px;
+}
+
+.chevron {
+    width: 10px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .headerWr {
+        left: -16px;
+        padding-right: 16px;
+        padding-left: 16px;
+        width: calc(100% + 2 * 16px);
+    }
+
+    .item a {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .chevron {
+        width: 8px;
+        height: auto;
+    }
+
+    .headerWr {
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+    }
+
+}
+
+@media (max-width: 380px) {
+    .editIcon {
+        display: none;
+    }
+}

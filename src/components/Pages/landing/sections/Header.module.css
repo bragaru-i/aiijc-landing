@@ -1,0 +1,12 @@
+.header {
+    font-family: Nekst;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 72px;
+    /* identical to box height, or 112% */
+    
+    font-feature-settings: 'salt' on;
+    
+    color: #FFFFFF;
+}

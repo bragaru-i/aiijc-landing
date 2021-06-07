@@ -1,0 +1,85 @@
+.container {
+  margin: 182px 0;
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  span {
+    margin-top: 20px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 42px;
+    display: flex;
+    color: #000;
+  }
+  .svg__ico {
+    padding: 20px;
+    background: #f1e5ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &--course{
+      background-color: #D9F9E8;
+    }
+    &--video {
+      background: #f1e5ff;
+
+    }
+    &--application, &--other{
+      background-color: #FFE4DC;
+    }
+    &--article {
+      background-color: #D4F7FF;
+    }
+    &--book{
+      background-color: #FFEBD4;
+    }
+    &--game{
+      background-color: #CCF7F4;
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .container {
+    margin: 216px 0;
+    span {
+      font-size: 18px;
+      line-height: 42px;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+}
+
+@media (max-width: 767px) {
+  .container {
+    margin: 62px 0;
+
+    span {
+      margin-top: 10px;
+      font-size: 18px;
+      line-height: 42px;
+    }
+    .svg__ico {
+      padding: 14px;
+      svg {
+        width: 32px;
+        height: auto;
+      }
+    }
+  }
+}
+
+
+.centerSpinner{
+  transform: translateY(-90px);
+}
+.hidden{
+  display: none;
+}

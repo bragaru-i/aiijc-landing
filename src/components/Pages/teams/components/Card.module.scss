@@ -1,0 +1,49 @@
+.container {
+    margin-top: 14px;
+    padding: 20px;
+    font-style: normal;
+    background: #E6EAF5;
+    border: 2px solid #000000;
+
+    .heading {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 28px;
+        color: #000000;
+    }
+
+    .text {
+        margin-top: 15px;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 18px;
+        color: #909299;
+    }
+
+    .cta {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        margin-top: 20px;
+        padding: 30px;
+
+        .heading {
+            font-size: 20px;
+            line-height: 28px;
+        }
+
+        .text {
+            margin-top: 15px;
+            max-width: 600px;
+            font-size: 14px;
+            line-height: 22px;
+        }
+
+        .cta {
+            margin-top: 32px;
+        }
+    }
+}

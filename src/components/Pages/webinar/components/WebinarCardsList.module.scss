@@ -1,0 +1,144 @@
+.container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin-bottom: 22px;
+  & > div:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.nav-block {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0 20px 0;
+
+  &__heading {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 5px;
+  }
+  .nav-block__type {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 24px;
+    width: calc(35% - 4px);
+    &:first-child {
+      margin-right: 8px;
+      width: 65%;
+    }
+  }
+  &__select {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.paginator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  .perPage {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .paginator {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    width: 100%;
+    .perPage {
+      display: flex;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+      color: #858da6;
+      &Show {
+        margin-right: 20px;
+      }
+      &Numbers {
+        cursor: pointer;
+        &--active {
+          color: #1a55f6;
+          cursor: default;
+        }
+        &:not(:last-child) {
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  .nav-block {
+    flex-direction: row;
+    &__heading {
+      flex-direction: column;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      align-items: end;
+      padding-right: 15px;
+      padding-top: 3px;
+    }
+    .nav-block__type {
+      font-size: 14px;
+      width: fit-content;
+      &:first-child {
+        padding-bottom: 20px;
+        margin-right: 10px;
+      }
+      display: flex;
+      align-items: center;
+    }
+    &__select {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+.f_center {
+
+}
+@media (min-width: 1024px) {
+  .nav-block {
+    .nav-block__type {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  .container {
+    display: flex;
+    flex-direction: row;
+
+    & > div:nth-child(even) {
+      margin-left: 10px;
+    }
+  }
+  .evenColumn,
+  .oddColumn {
+    width: calc(50% - 5px);
+    max-width: 595px;
+    display: flex;
+    flex-direction: column;
+    & > div {
+      margin-bottom: 10px;
+    }
+  }
+  .paginator {
+    margin-bottom: 40px;
+  }
+  .f_center {
+  }
+}
+.extend{
+  min-height: 300px;
+}

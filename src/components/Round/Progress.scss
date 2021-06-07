@@ -1,0 +1,134 @@
+.progress {
+  .description {
+    .subtitle {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 22px;
+      color: #000000;
+    }
+
+    .tasksQual {
+      margin-top: 20px;
+      margin-bottom: 25px;
+      background-color: #F6F9FE;
+
+      .taskWrapper {
+        padding: 17px 10px 18px 20px;
+        border: 2px solid #E6EAF7;
+        border-bottom-width: 1px;
+
+        &:not(:first-child) {
+          border-top-width: 1px;
+        }
+
+        &.taskWrapperSuccess {
+          border-color: #06B418;
+        }
+
+        .taskName {
+          margin-bottom: 10px;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 13px;
+          line-height: 1.29;
+        }
+
+        .taskInfoWrapper {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+
+          .points {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 18px;
+            color: #919399;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            .qualPoint {
+              margin-bottom: 5px;
+            }
+
+            .accent {
+              color: #1E1EF7;
+            }
+
+            .success {
+              color: #06B418;
+            }
+          }
+          svg {
+            flex-shrink: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1250px) {
+  .progress {
+    .description {
+      .subtitle {
+      }
+
+      .tasksQual {
+        .taskWrapper {
+
+          .taskName {
+          }
+
+          .taskInfoWrapper {
+
+            .points {
+              display: flex;
+              align-items: center;
+
+              .qualPoint {
+                margin-bottom: 0;
+                margin-right: 30px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .progress {
+    .description {
+      .subtitle {
+      }
+
+      .tasksQual {
+        .taskWrapper {
+
+          .taskName {
+          }
+
+          .taskInfoWrapper {
+
+            .points {
+              display: block;
+              font-size: 12px;
+
+              .qualPoint {
+                margin-bottom: 4px;
+                margin-right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+

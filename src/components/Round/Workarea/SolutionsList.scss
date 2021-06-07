@@ -1,0 +1,27 @@
+.ratingFooter {
+    padding: 20px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .pageFilter {
+        .pageFilterLabel {
+            cursor: auto;
+            margin-right: 20px;
+        }
+
+        span {
+            margin-right: 10px;
+            cursor: pointer;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 17px;
+            color: #858da6;
+
+            &.active {
+                color: #1a55f6;
+            }
+        }
+    }
+}

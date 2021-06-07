@@ -1,0 +1,96 @@
+.wrapper {
+    margin-top: 90px;
+    position: absolute;
+    width: 190px;
+    left: calc(-190px - 32px);
+}
+
+.menu {
+    margin-top: -7px;
+    padding: 0 20px;
+}
+
+.item {
+    display: block;
+
+    svg {
+        margin-left: auto;
+    }
+
+    &.bordered {
+        border-top: 2px solid #DDE0EB;
+        margin-top: 8px;
+        padding-top: 8px;
+    }
+
+    &.borderedLeft a::before {
+        content: '';
+        display: block;
+        width: 2px;
+        height: 35px;
+        margin-right: 15px;
+        background-color: currentColor;
+        flex-shrink: 0;
+    }
+
+    a {
+        margin-bottom: 7px;
+        margin-top: 7px;
+        display: flex;
+        align-items: center;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 22px;
+        text-decoration: none;
+        color: #909299;
+
+        &:global(.active) {
+            color: #1E1EF7;
+        }
+
+        .invitationsCounter {
+            height: 22px;
+            margin-left: 10px;
+            padding: 0 7px;
+            border-radius: 50%;
+            line-height: 20px;
+            background-color: #F1F3F7;
+            color: #909299;
+        }
+
+        &:global(.active) {
+            .invitationsCounter {
+                color: #fff;
+                background-color: #1E1EF7;
+            }
+        }
+    }
+}
+
+.help {
+    padding: 18px 20px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 20px;
+    background: #F7F9FC;
+
+    &, a {
+        color: #909299;
+    }
+}
+
+@media (max-width: 1300px) {
+    .wrapper {
+        width: 140px;
+        left: calc(-140px - 32px);
+    }
+}
+
+@media (max-width: 1200px) {
+    .wrapper {
+        display: none;
+    }
+}

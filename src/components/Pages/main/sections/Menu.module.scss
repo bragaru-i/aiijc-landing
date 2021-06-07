@@ -1,0 +1,64 @@
+.menu {
+    display: flex;
+}
+
+.separator {
+    height: 40px;
+    background: #707070;
+    width: 1px;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.teamsLink {
+    padding-left: 30px;
+    position: relative;
+
+    svg {
+        position: absolute;
+        left: 0;
+    }
+}
+
+.teamsLinkMobile {
+    display: none;
+}
+
+@media (max-width: 1350px) and (min-width: 1199px) {
+    .about {
+        display: none;
+    }
+
+    :global(.header .container .profile .user) {
+        min-width: calc(210px - 30px);
+    }
+
+    :global(.header .container .profile .user .user-login) {
+        max-width: calc(145px - 20px);
+        min-width: calc(145px - 20px);
+    }
+
+    :global(.header .container .menu) {
+        margin-right: 30px;
+    }
+
+    .separator {
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+}
+
+@media (max-width: 1200px) {
+    .separator {
+        display: none;
+    }
+
+    :global(.header.loggined.burgerOpened .menu ul).rightList {
+        display: none;
+    }
+
+    .teamsLinkMobile {
+        display: list-item;
+    }
+}

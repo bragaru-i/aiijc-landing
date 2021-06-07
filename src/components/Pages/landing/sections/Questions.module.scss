@@ -1,0 +1,199 @@
+$cellsize: 96px;
+$cellpadd: 95px;
+.faq {
+    background-color: #000;
+    transform: translateY(-60px);
+    position: relative;
+    overflow: hidden;
+    min-height: 1056px;
+
+    z-index: 3;
+    background-size: $cellsize $cellsize;
+    background-image: repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent $cellpadd,
+            #5f5f5f $cellpadd,
+            #5f5f5f $cellsize
+        ),
+        repeating-linear-gradient(-90deg, transparent, transparent $cellpadd, #5f5f5f $cellpadd, #5f5f5f $cellsize);
+    background-position: cover;
+
+    &::before {
+        content: '';
+        z-index: 1;
+        position: absolute;
+        width: 100%;
+        height: 1056px;
+        background-image: url('/static/dist/aiijc/images/landing/min/herobox-background-min.png'),
+            url('/static/dist/aiijc/images/landing/min/herobox-background-2-min.png');
+
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        opacity: 0.4;
+    }
+    &::after {
+        overflow: hidden;
+        content: '';
+        z-index: 1;
+        position: absolute;
+        width: 100%;
+        top: -10%;
+        height: 1056px;
+        background-image: url('/static/dist/aiijc/images/landing//min/eclipse-1690-min.png');
+
+        opacity: 0.8;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.wrapper {
+    position: relative;
+    z-index: 4;
+    margin-top: 220px;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+
+    position: relative;
+    padding-bottom: 60px;
+}
+
+.question {
+    padding: 14px 32px 18px 24px;
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+}
+
+.questions {
+    margin-top: 50px;
+    border: 1px solid #fff;
+    background: #000;
+}
+
+.question:last-child {
+    border-bottom: unset;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Nekst;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    color: #fff;
+    user-select: none;
+}
+
+.arrow {
+    transition-duration: var(--transition-duration);
+    min-width: 36px;
+    margin-left: 10px;
+}
+
+.selected .arrow {
+    transform: rotate(180deg);
+}
+
+.body {
+    font-family: Nekst;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #fff;
+    overflow: hidden;
+    transition-duration: 0.3s;
+    max-width: 912px;
+}
+
+.bottomLines {
+    margin-bottom: -10px;
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    .arrow {
+        transform: scale(0.7);
+    }
+    .body {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .header {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .selected .arrow {
+        transform: scale(0.7) rotate(180deg);
+    }
+}
+
+@media (max-width: 410px) {
+    .wrapper {
+        top: 56px;
+    }
+
+    .container {
+        top: -56px;
+    }
+}
+
+@media (min-width: 650px) {
+    .faq {
+        min-height: 864px;
+        transform: translateY(-120px);
+    }
+
+    .wrapper {
+        margin-top: 199px;
+    }
+    .questions {
+        margin-top: 40px;
+    }
+}
+@media (max-width: 1259px) {
+    .faq::before,
+    .faq::after {
+        left: 0;
+        background-size: cover;
+    }
+}
+@media (min-width: 1260px) {
+    $cellsize-lg: 120px;
+    $cellpadd-lg: 119px;
+    .wrapper {
+        margin-top: 138px;
+    }
+    .faq {
+        min-height: 840px;
+        background-size: $cellsize-lg $cellsize-lg;
+        background-image: repeating-linear-gradient(
+                0deg,
+                transparent,
+                transparent $cellpadd-lg,
+                #5f5f5f $cellpadd-lg,
+                #5f5f5f $cellsize-lg
+            ),
+            repeating-linear-gradient(
+                -90deg,
+                transparent,
+                transparent $cellpadd-lg,
+                #5f5f5f $cellpadd-lg,
+                #5f5f5f $cellsize-lg
+            );
+        background-position: cover;
+    }
+    .questions {
+        margin-top: 50px;
+    }
+}

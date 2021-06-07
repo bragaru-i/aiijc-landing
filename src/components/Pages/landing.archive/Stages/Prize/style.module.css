@@ -1,0 +1,134 @@
+.wrapper {
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    padding: 24px;
+}
+
+.content {
+    background: black;
+    padding: 64px 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.centered {
+    display: flex;
+    align-items: center;
+}
+
+.centered .offer {
+    margin-bottom: unset;
+}
+
+.commands {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.prize {
+    font-family: Halunke CY;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 152px;
+    line-height: 160px;
+    text-transform: uppercase;
+    color: #72FF72;
+    white-space: nowrap;
+    margin-right: 100px;
+}
+
+.offer {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin-bottom: 38px;
+}
+
+.topLines {
+    width: 100%;
+    height: auto;
+    margin-top: -4px;
+    z-index: 1;
+    position: relative;
+    margin-bottom: -8px;
+}
+
+.bottomLines {
+    width: 51.3%;
+    padding-left: 12%;
+    height: auto;
+    margin-top: -4px;
+    margin-bottom: -8px;
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 1200px) {
+    .content {
+        flex-direction: column;
+        padding: 64px;
+    }
+
+    .content button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 991px) {
+    .lines, .topLines, .bottomLines {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        padding: 0;
+        border: unset;
+        width: calc(100% + 2 * var(--padding-container-right-left));
+        position: relative;
+        right: var(--padding-container-right-left);
+    }
+
+    .content {
+        flex-direction: column;
+        padding: 64px 32px;
+    }
+
+    .commands {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 8px;
+    }
+
+    .prize {
+        font-size: 88px;
+        line-height: 88px;
+        margin-bottom: 24px;
+        margin-right: unset;
+    }
+
+    .offer {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 410px) {
+    .prize {
+        font-size: 76px;
+        line-height: 76px;
+    }
+
+    .content {
+        flex-direction: column;
+        padding: 48px 16px;
+    }
+}

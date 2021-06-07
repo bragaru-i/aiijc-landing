@@ -1,0 +1,22 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    margin: 0 auto;
+
+    width: calc(100% - 30px);
+    max-width: 1124px;
+}
+@media (min-width: 768px) {
+    .row {
+        width: calc(100% - 48px);
+    }
+}
+@media (min-width: 1260px) {
+    .row {
+        max-width: 1152px;
+        width: 1152px;
+    }
+}

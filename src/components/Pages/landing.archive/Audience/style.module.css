@@ -1,0 +1,146 @@
+.card {
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    box-shadow: -4px 4px 0 #000000;
+    padding: 30px;
+    position: relative;
+}
+
+.imageWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    margin-bottom: 32px;
+}
+
+.imageWrapper > svg {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+.title {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 40px;
+    color: #000000;
+    margin-bottom: 16px;
+}
+
+.subTitle {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 32px;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: var(--width-container);
+    padding: var(--padding-container);
+    position: relative;
+    top: -80px;
+}
+
+.topLines {
+    width: 100%;
+    height: auto;
+    padding-left: 8%;
+    padding-right: 16%;
+    position: relative;
+    margin-bottom: -7px;
+    z-index: 1;
+    margin-top: -4px;
+}
+
+.bottomLines {
+    width: 100%;
+    height: auto;
+    padding-left: 8%;
+    padding-right: 16%;
+    position: relative;
+    margin-bottom: -10px;
+    z-index: 1;
+}
+
+.wrapper {
+    background: var(--color-green);
+    position: relative;
+    top: 80px;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+}
+
+@media (max-width: 991px) {
+    .topLines, .bottomLines {
+        display: none;
+    }
+
+    .cards {
+        margin-top: 96px;
+        margin-bottom: 120px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        max-width: 384px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .cards {
+        margin-top: 64px;
+        margin-bottom: 96px;
+    }
+
+    .title {
+        margin-bottom: 12px;
+    }
+}
+
+@media (max-width: 410px) {
+    .title {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 8px;
+    }
+
+    .imageWrapper {
+        margin-bottom: 24px;
+    }
+
+    .card {
+        padding: 24px;
+    }
+
+    .imageWrapper {
+        height: 145px;
+    }
+
+    .cards {
+        margin-bottom: 80px;
+    }
+
+    .wrapper {
+        top: 56px
+    }
+
+    .container {
+        top: -56px;
+    }
+}

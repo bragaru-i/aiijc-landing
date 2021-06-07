@@ -1,0 +1,112 @@
+.headerWr {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.header {
+    margin-top: 0;
+    margin-right: 12px;
+}
+
+.deleteBtn {
+    margin-left: auto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration-line: underline;
+    color: #909299;
+    background: none;
+    cursor: pointer;
+    border: none;
+    padding: 8px 12px;
+    position: relative;
+    right: -12px;
+}
+
+.deleteBtnMobile {
+    display: none;
+}
+
+.address {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.description {
+    min-height: 150px;
+    max-height: 400px;
+    resize: vertical;
+}
+
+.teamForm {
+    :global(.field__input) {
+        width: 100%;
+    }
+}
+
+.countryFormField {
+    z-index: 3;
+}
+
+.help {
+    border-top: 1px solid #CED1D9;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 25px;
+    margin-top: 25px;
+
+    &, a {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 22px;
+        color: #5F5F5F;
+    }
+
+    svg {
+        margin-right: 15px;
+        min-width: 20px;
+    }
+}
+
+.actions {
+    margin-top: 25px;
+
+    @media (max-width: 1200px) {
+        :global(.btn) {
+            width: 100%;
+        }
+    }
+}
+
+.deleteActions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    margin-top: 40px;
+}
+
+
+@media (max-width: 1200px) {
+    .address {
+        grid-gap: 0;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .deleteBtn {
+        display: none;
+    }
+
+    .deleteBtnMobile {
+        display: block;
+        right: 0;
+        margin: auto;
+        margin-top: 12px;
+    }
+}

@@ -1,0 +1,102 @@
+$cellsize: 96px;
+$cellpadd: 95px;
+.partners {
+    padding-top: 119px;
+    z-index: 8;
+    transform: translateY(-60px);
+    height: 666px;
+    background-size: $cellsize $cellsize;
+    background-image: repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent $cellpadd,
+            #5f5f5f $cellpadd,
+            #5f5f5f $cellsize
+        ),
+        repeating-linear-gradient(-90deg, transparent, transparent $cellpadd, #5f5f5f $cellpadd, #5f5f5f $cellsize);
+    background-position: cover;
+    &-logos {
+        z-index: 8;
+        padding-top: 52px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+    }
+    &-logo {
+        margin: 0 auto;
+        &:first-child {
+            margin-bottom: 32px;
+        }
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self: baseline;
+
+        width: 344px;
+        max-width: calc(100% - 15px);
+        height: 256px;
+        background: #ffffff;
+        border: 1px solid #5f5f5f;
+    }
+}
+
+@media (min-width: 650px) {
+    .partners {
+        height: 476px;
+        transform: translateY(-120px);
+        padding-top: 103px;
+        &-logos {
+            padding-top: 40px;
+            flex-direction: row;
+        }
+        &-logo {
+           width: calc(50% - 24px);
+            height: 336px;
+            &:first-child {
+                margin-bottom: 0;
+                margin-right: 48px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1260px) {
+    $cellsize-lg: 120px;
+    $cellpadd-lg: 119px;
+
+    .partners {
+        padding-top: 138px;
+        height: 601px;
+        background-size: $cellsize-lg $cellsize-lg;
+        background-image: repeating-linear-gradient(
+                0deg,
+                transparent,
+                transparent $cellpadd-lg,
+                #5f5f5f $cellpadd-lg,
+                #5f5f5f $cellsize-lg
+            ),
+            repeating-linear-gradient(
+                -90deg,
+                transparent,
+                transparent $cellpadd-lg,
+                #5f5f5f $cellpadd-lg,
+                #5f5f5f $cellsize-lg
+            );
+        background-position: cover;
+        &-logos {
+            padding-top: 53px;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        &-logo {
+            height: 369px;
+            width: 100%;
+            max-width: 552px;
+            &:first-child {
+                margin-right: 49px;
+            }
+        }
+    }
+}

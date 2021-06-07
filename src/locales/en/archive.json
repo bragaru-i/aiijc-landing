@@ -1,0 +1,69 @@
+{
+    "Landing": {
+        "Nav": {
+            "Button": "Register now",
+            "AuthButton": "Log in",
+            "ModalHeader": "Log In"
+        },
+        "Contest": {
+            "Header": "Artificial intelligence international junior<br/>contest"
+        },
+        "ContestTriangle": {
+            "Header1": "Start",
+            "Header2": "Prizes worth",
+            "Button": "Register now",
+            "Month": "FEBRUARY"
+        },
+        "Audience": {
+            "Header": "Who is the Contest For?",
+            "Card1Title": "Kids and teenagers under 18",
+            "Card1Subtitle": "The contest is open to school students in any grade.",
+            "Card2Title": "Those interested in AI",
+            "Card2Subtitle": "School knowledge is sufficient to participate. We will teach you the rest along the line.",
+            "Card3Title": "People from across the globe",
+            "Card3Subtitle": "No matter where you are, location is not going to get in the way of you fighting for the top prize."
+        },
+        "Stages": {
+            "Header": "Contest Rounds",
+            "Point1Title": "Until 30 June 2021",
+            "Point1Subtitle": "Qualifying round",
+            "Point1Text": "Individual participation that involves getting to know task types and learning new approaches to solving non-standard problems.",
+            "Point2Title": "15 April – 31 July 2021",
+            "Point2Subtitle": "Team round",
+            "Point2Text": "Building teams, choosing one of ten contest domains, and fighting to get into the final.",
+            "Point3Title": "End of 2021",
+            "Point3Subtitle": "Offline round",
+            "Point3Text": "Top 50 teams get together in Moscow. Transport and accommodation costs are covered by the contest."
+        },
+        "StagesPrize": {
+            "Commands": "Each of ten winner teams gets ",
+            "Offer": "Apply now to be among the first to get started with the tasks!",
+            "Button": "Register now"
+        },
+        "Questions": {
+            "Header": "Frequently Asked Questions",
+            "Item1Title": "How hard are the tasks that I will have to deal with?",
+            "Item1Text": "You will need high school level of knowledge to solve most of the tasks. Again, we have prepared guides, video tutorials, and lectures that will help you to quickly find the missing information.",
+            "Item2Title": "How much time will I have to solve the tasks?",
+            "Item2Text": "You can get started with the tasks anytime before the round is over. After the deadline, solutions cannot be submitted anymore.",
+            "Item3Title": "What is the qualifying round aimed at?",
+            "Item3Text": "The qualifying round is your chance to get an idea of the tasks and to prove yourself among other participants. This will help you to create your dream team or join an existing group.<br/><br/>If you participate with your friends, each one of you will have to upload your individual solutions for the qualifying round first in order to get into the next one. During the second round, you can team up and work on the tasks together.",
+            "Item4Title": "How do we build teams?",
+            "Item4Text": "Building teams of 3 to 5 people takes place before the second round starts. Each of the participants can set up their own team or join an existing one.",
+            "Item5Title": "How are winners determined?",
+            "Item5Text": "Best teams in 10 domains make it to the offline round. Each team has to perform a final task together, which is then evaluated by the judging panel. The gold winners in each domain will be announced as the winners of the contest. For more details, please read the Contest Regulations."
+        },
+        "Partners": {
+            "Header": "Partners"
+        },
+        "Footer": {
+            "Header": "Still have questions?",
+            "Subheader": "For any questions, please email us at ",
+            "Copyright": "2021. All rights reserved.",
+            "CopyrightExtra": "All materials belong to their copyright holder.",
+            "Rules": "Terms and Conditions",
+            "FaqLink": "FAQ",
+            "MadeBy": "Supported by "
+        }
+    }
+}

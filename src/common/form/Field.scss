@@ -1,0 +1,74 @@
+.form__row {
+    margin-bottom: 20px;
+}
+
+.password-wrapper {
+    position: relative;
+
+    input {
+        padding-right: 40px;
+    }
+
+    .password-checkbox {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(-50%, -50%);
+        width: 24px;
+        height: 24px;
+        background-image: url('/static/images/eye-off.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        cursor: pointer;
+    }
+    .password-checkbox.view {
+        background-image: url('/static/images/eye.svg');
+    }
+}
+
+.form__field label.field__label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form__field input {
+    display: block;
+}
+
+.form__field.field-error input,
+.form__field.field-error textarea,
+.form__field.field-error .select__control
+{
+    border: 1px solid #EE0E0E;
+}
+
+.form__field input+.field__error,
+.dateInput+.field__error,
+.password-wrapper+.field__error {
+    margin-top: 10px;
+    display: block;
+}
+
+.field__error, .form__errors {
+    font-size: 13px;
+    line-height: 18px;
+    color: #EE0E0E;
+}
+
+@media (max-width: 668px) {
+    .password-wrapper {
+    
+        .password-checkbox {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .form__field label.field__label {
+        margin-bottom: 4px;
+    }
+
+    .form__field input {
+        margin-bottom: 15px;
+    }
+}

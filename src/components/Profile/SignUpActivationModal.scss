@@ -1,0 +1,46 @@
+.signup_activation-modal {
+  .activation_code-label-wrapper {
+    display: flex;
+    justify-content: space-between;
+
+    .activation_code-expire {
+      line-height: 1.12;
+
+      .timer {
+        width: 44px;
+        display: inline-block;
+        color: #000000;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .submit-btn {
+    width: 100%;
+    margin: 16px 0;
+  }
+
+  a {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.29;
+    text-decoration-line: underline;
+    color: #989FB3;
+    transition: color 250ms;
+
+    &:hover {
+      color: #1A55F6;
+    }
+  }
+
+
+  .help-text {
+    margin-bottom: 30px;
+  }
+
+  .text-secondary {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

@@ -1,0 +1,31 @@
+.sections-heading {
+    font-family: Nekst;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 36px;
+    font-feature-settings: 'salt' on;
+    color: #000000;
+    br{
+        margin-bottom: -20px;
+    }
+    &.white {
+        color: #fff;
+    }
+}
+
+@media (min-width: 650px) {
+    .sections-heading {
+        font-size: 48px;
+        line-height: 72px;
+        br {
+            display: none;
+        }
+    }
+}
+@media (min-width: 1152px) {
+    .sections-heading {
+        font-size: 64px;
+        line-height: 72px;
+    }
+}

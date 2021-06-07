@@ -1,0 +1,58 @@
+.not-found {
+    margin-top: 120px;
+    text-align: center;
+    font-family: 'Nekst';
+    font-style: normal;
+    font-weight: 600;
+
+    .not-found-title {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 250px;
+        line-height: 300px;
+        color: #000000;
+        margin-bottom: 70px;
+
+        span:not(:last-child) {
+            margin-right: 100px;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 35vw;
+            line-height: 1;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 30px;
+
+            span:not(:last-child) {
+                margin-right: 0;
+            }
+        }
+    }
+
+    .not-found-subtitle {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 35px;
+        line-height: 50px;
+        color: #919399;
+
+        @media (max-width: 768px) {
+            font-size: 24px;
+            line-height: 29px;
+        }
+    }
+
+    .not-found-link {
+        margin-bottom: 170px;
+        .back-btn {
+            justify-content: center;
+        }
+
+        @media (max-width: 768px) {
+            font-size: 14px;
+            line-height: 26px;
+        }
+    }
+}

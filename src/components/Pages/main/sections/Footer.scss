@@ -1,0 +1,309 @@
+
+.footer {
+    margin-top: auto;
+    min-height: 300px;
+    padding: 40px 0 46px;
+    background-color: #01010B;
+    background-image: url("/static/dist/aiijc/images/bg-footer.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 600;
+    color: #989fb3;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+
+        .mobile {
+            display: none;
+        }
+
+        .left {
+            min-height: 215px;
+            position: relative;
+            margin-right: 100px;
+
+            h4 {
+                margin-bottom: 30px;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 35px;
+                line-height: 0.91;
+                color: #FFFFFF;
+            }
+
+            .support {
+                display: flex;
+                align-items: flex-end;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 1.5;
+                color: rgba(255, 255, 255, 0.6);
+
+                a {
+                    color: rgba(255, 255, 255, 0.6);
+
+                    &:hover {
+                        color: #0000FF;
+                    }
+                }
+            }
+
+            .copyright {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                display: flex;
+                align-items: flex-end;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 1.5;
+                color: #FFFFFF;
+            }
+        }
+
+        .right {
+            min-height: 215px;
+            position: relative;
+            min-width: 365px;
+
+            .all-cups {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 1.5;
+                    color: #999999;
+                    text-decoration: none;
+                    transition: 500ms;
+
+                    &:hover {
+                        color: #fff;
+                    }
+
+                    img {
+                        flex-shrink: 0;
+                        margin-left: 45px;
+                    }
+                }
+            }
+
+            .footer-faq-link {
+                display: block;
+                margin-bottom: 30px;
+                text-decoration: none;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 35px;
+                line-height: 1.2;
+                color: #FFFFFF;
+            }
+
+            .links {
+                display: flex !important;
+                align-items: center !important;
+
+                li {
+                    display: flex;
+                    align-items: center;
+
+                    &:not(:last-child) {
+                        margin-right: 40px;
+                    }
+
+                    a {
+                        display: flex;
+                        align-items: center;
+                        text-decoration: none;
+                        transition: 500ms;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 1.19;
+                        color: #FFFFFF;
+
+                        &:hover {
+                            color: #0000FF;
+                        }
+
+                        svg {
+                            margin-right: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .footer {
+        .container {
+            display: flex;
+            justify-content: space-between;
+
+            .left {
+                margin-right: 15px;
+
+                h4 {
+                    font-size: 20px;
+                    line-height: 1.4;
+                    margin-bottom: 0;
+                }
+
+                .support {
+                    font-size: 13px;
+                    line-height: 1.57;
+                }
+
+                .copyright {
+                    margin-top: 27px;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 1.43;
+                }
+            }
+
+            .right {
+                min-width: 264px;
+
+                .all-cups {
+                    a {
+                        font-size: 14px;
+                        line-height: 1.57;
+
+                        img {
+                            margin-left: 5px;
+                            width: 85px;
+                        }
+                    }
+                }
+
+
+                .links {
+                    li {
+                        &:not(:last-child) {
+                            margin-right: 30px;
+                        }
+
+                        a {
+                            font-size: 12px;
+                            line-height: 1.5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 21px 0 22px;
+        font-size: 12px;
+
+        .container {
+            flex-direction: column;
+
+            .left, .right {
+                display: none;
+            }
+
+            .mobile {
+                display: block;
+
+                h4 {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 26px;
+                    line-height: 28px;
+                    color: #FFFFFF;
+                }
+
+                .support {
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: #99999D;
+
+                    a {
+                        color: #99999D !important;
+                    }
+                }
+
+                .linksWrapper {
+                    margin-top: 16px;
+                    margin-bottom: 78px;
+                    display: flex;
+                    align-items: center;
+
+                    .link {
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 18px;
+                        color: #FFFFFF;
+                        text-decoration: none;
+
+                        display: flex;
+                        align-items: center;
+
+                        svg {
+                            margin-right: 14px;
+                        }
+                    }
+
+                    .footer-faq-link {
+                        margin-left: 40px;
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 18px;
+                        text-decoration-line: underline;
+                        color: #FFFFFF;
+                    }
+                }
+
+                .copyright {
+                    margin-bottom: 19px;
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 12px;
+                    line-height: 18px;
+                    color: #FFFFFF;
+                }
+
+                .all-cups {
+                    a {
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 12px;
+                        line-height: 18px;
+                        color: #999999;
+                        text-decoration: none;
+
+                        display: flex;
+                        align-items: center;
+
+                        img {
+                            max-width: 77px;
+                            margin-left: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

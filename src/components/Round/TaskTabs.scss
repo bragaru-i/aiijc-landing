@@ -1,0 +1,68 @@
+.task-tabs {
+    display: flex;
+    align-items: center;
+    
+    .task-tab {
+        border: 2px solid #1E1EF7;
+        cursor: pointer;
+        padding: 12px 35px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.62;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #1E1EF7;
+        
+        svg {
+            margin-right: 15px;
+            --svg-color: #1E1EF7;
+        }
+
+        &.active {
+            svg {
+                --svg-color: #fff;
+            }
+        }
+
+        &:hover {
+            background: #dde0eb;
+        }
+
+        &:not(:last-child) {
+            border-right: none;
+        }
+
+        &.active {
+            background-color: #1E1EF7;
+            color: #fff;
+        }
+    }
+}
+
+@media (max-width: 1250px) {
+    .taskTabsWrapper {
+        .task-tabs {
+            .task-tab {
+                flex-grow: 1;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .task-tabs {
+        flex-direction: column;
+        margin: 15px 0 18px;
+        .task-tab {
+            width: 100%;
+            padding: 12px 15px;
+            flex-grow: 1;
+
+            &:not(:last-child) {
+                margin-bottom: 5px;
+                border-right: 2px solid #1E1EF7;
+            }
+        }
+    }
+}

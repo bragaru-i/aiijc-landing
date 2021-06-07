@@ -1,0 +1,21 @@
+.settings-unuscribe-text {
+    font-family: Nekst;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #919399;
+    margin-bottom: 15px;
+}
+
+.settings-unuscribe-button {
+    margin-top: 20px;
+}
+
+@media (min-width: 827px) {
+    .settings-unuscribe-text {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+}

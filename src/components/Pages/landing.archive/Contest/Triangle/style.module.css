@@ -1,0 +1,140 @@
+.triangle {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--color-green);
+    position: absolute;
+    top: 35%;
+    z-index: 1;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 64px;
+    margin-bottom: 56px;
+    position: relative;
+    z-index: -1;
+}
+
+.header {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+.subHeader {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 64px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.month {
+    font-size: 16px;
+    line-height: 24px;
+    text-transform: lowercase;
+}
+
+.subHeaderShadow {
+    position: absolute;
+    color: black;
+    top: 3px;
+    z-index: -1;
+    left: -3px;
+    text-shadow: -1px -1px 0 var(--color-green), 1px -1px 0 var(--color-green), -1px 1px 0 var(--color-green), 1px 1px 0 var(--color-green);
+}
+
+.dash {
+    position: absolute;
+}
+
+.hideSignup {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+@media (max-width: 1200px) {
+    .info {
+        transform: scale(0.8);
+        transform-origin: left;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    .triangle button {
+        width: 100%;
+        margin-bottom: 160px;
+    }
+
+    .info {
+        margin-bottom: 64px;
+        transform: unset;
+    }
+
+    .triangle {
+        top: 0;
+    }
+
+    .triangle {
+        position: static;
+    }
+}
+
+@media (max-width: 768px) {
+    .triangle button {
+        margin-bottom: 177px
+    }
+
+    .info {
+        grid-template-columns: auto;
+        grid-gap: 16px;
+    }
+
+    .dash {
+        display: none;
+    }
+
+    .subHeader {
+        font-size: 56px;
+        line-height: 56px;
+    }
+
+    .subHeaderShadow {
+        display: none;
+    }
+
+    .header {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+@media (max-width: 538px) {
+    .triangle button {
+        margin-bottom: 150px
+    }
+}
+
+@media (max-width: 468px) {
+    .triangle button {
+        margin-bottom: 80px
+    }
+}
+
+@media (max-width: 410px) {
+    .subHeader {
+        font-size: 46px;
+        line-height: 48px;
+    }
+}

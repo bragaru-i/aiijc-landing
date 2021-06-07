@@ -1,0 +1,23 @@
+.jqmOverlay .modal-chooseTrack .modal-inner {
+    .modal-header {
+        margin-bottom: 10px;
+        h3 {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 28px;
+        }
+    }
+    .modal-content {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .two-btns{
+        margin-top: 32px;
+        display: flex;
+        &>:first-child{
+            margin-right: 10px;
+        }
+    }
+}

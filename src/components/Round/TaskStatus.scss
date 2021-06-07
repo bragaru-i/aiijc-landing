@@ -1,0 +1,16 @@
+.taskStatus {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 0.92;
+    color: #858da6;
+    display: flex;
+    align-items: center;
+
+    svg {
+        margin-right: 10px;
+    }
+
+    &.active {
+        color: #06b418;
+    }
+}

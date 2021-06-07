@@ -1,0 +1,35 @@
+.social-links {
+    display: flex;
+    align-items: center;
+
+    span {
+        margin-right: 25px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 1.57;
+        color: #C2C4CC;
+    }
+
+    a {
+        color: #C2C4CC;
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+
+        svg {
+            margin-top: 6px;
+        }
+    }
+    a:focus {
+        color: #C2C4CC;
+    }
+    a:hover {
+        color: #0000FF;
+    }
+}
+
+@media (max-width: 1250px) {
+  .social-links {
+  }
+}

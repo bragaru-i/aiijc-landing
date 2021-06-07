@@ -1,0 +1,58 @@
+.number {
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    font-family: Halunke CY;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 96px;
+    line-height: 96px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 136px;
+    height: 136px;
+    min-width: 136px;
+    min-height: 136px;
+    position: relative;
+}
+
+.topLeft {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+}
+
+.topRight {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+
+.bottomRight {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+}
+
+.bottomLeft {
+    position: absolute;
+    bottom: 12px;
+    left: 12px;
+}
+
+@media (max-width: 768px) {
+    .topLeft, .topRight, .bottomRight, .bottomLeft {
+        display: none;
+    }
+
+    .number {
+        font-size: 40px;
+        line-height: 40px;
+        width: 72px;
+        height: 72px;
+        min-width: 72px;
+        min-height: 72px;
+    }
+}

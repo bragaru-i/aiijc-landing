@@ -1,0 +1,33 @@
+.container {
+    background: rgba(245, 121, 11, 0.1);
+    width: 100%;
+    font-family: Nekst;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    color: #f5790b;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    display: flex;
+    span {
+        color:#F89D4D;
+    }
+    .ico {
+        margin-right: 10px;
+        @media (min-width: 1024px) {
+        display: flex;
+        align-items: center;}
+    }
+    @media (min-width: 768px) {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 20px;
+    }
+    @media (min-width: 1024px) {
+        align-items: center;
+        font-size: 14px;
+        line-height: 20px;
+        padding: 20px 5px 20px 20px;
+    }
+}

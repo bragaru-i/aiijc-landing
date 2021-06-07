@@ -1,0 +1,171 @@
+.FaqWrapperRestoreActivate {
+    background: #E6EAF5;
+    border: 2px solid #000000;
+    padding: 65px 88px;
+
+    .btn.primary[disabled] {
+        background-color: #CFD4E6;
+        border: 1px solid #CFD4E6;
+        color: #858DA6;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .mw485 {
+        max-width: 485px;
+    }
+
+    .faq-form {
+        margin-top: 26px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        &.new-password {
+            .form__row:first-child {
+                margin-right: 10px;
+            }
+        }
+
+        .btn {
+            min-width: 220px;
+            margin-left: 20px;
+            margin-top: 26px;
+            flex-shrink: 0;
+
+            &.new-password {
+                min-width: 190px;
+            }
+        }
+
+        /* .form__field.field-error {
+            position: relative;
+
+            .field__error {
+                margin-bottom: 0;
+                margin-top: 0;
+                position: absolute;
+                left: 0;
+                bottom: -15px;
+            }
+        }*/
+
+        .form__row {
+            width: 100%;
+
+            .form__field {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                .activation_code-expire {
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 1.12;
+                    color: #989fb3;
+
+                    .timer {
+                        width: 44px;
+                        display: inline-block;
+                        color: #000000;
+                        font-weight: 600;
+                    }
+                }
+
+                .password-wrapper+.field__error {
+                    margin-top: 0;
+                }
+            }
+
+            .form__field input + .field__error {
+                margin-top: 0;
+            }
+
+            input {
+                width: 100%;
+                margin-bottom: 8px;
+            }
+        }
+    }
+
+    .FaqWrapperContent {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        p {
+            width: 426px;
+        }
+
+        .btn {
+            margin-left: 34px;
+            flex-grow: 1;
+        }
+    }
+
+    .step-final {
+        .btn {
+            margin-top: 40px;
+            min-width: 220px;
+        }
+    }
+}
+
+@media (max-width: 840px) {
+    .FaqWrapperRestoreActivate {
+        padding: 30px;
+
+        p {
+            line-height: 1.37;
+        }
+    }
+}
+
+@media (max-width: 668px) {
+    .FaqWrapperRestoreActivate {
+        padding: 20px;
+
+        p {
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        .faq-form {
+            flex-direction: column;
+            align-items: flex-start;
+
+            .form__row {
+                width: 100%;
+
+                input {
+                    margin-bottom: 0;
+                }
+
+                .form__field input + .field__error {
+                    margin-bottom: 0;
+                    margin-top: 8px;
+                }
+
+                label {
+                    font-size: 12px;
+                    line-height: 1.5;
+                }
+                .form__field {
+                    .activation_code-expire {
+                        font-size: 12px;
+                        line-height: 1.5;
+                    }
+                }
+            }
+
+            .btn {
+                margin-left: 0;
+                margin-top: 20px;
+                width: 100%;
+            }
+        }
+    }
+}

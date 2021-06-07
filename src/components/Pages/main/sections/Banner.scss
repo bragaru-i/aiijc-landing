@@ -1,0 +1,297 @@
+.container.banner-container {
+    padding-top: 50px;
+}
+
+.banner-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner-tabs {
+    display: flex;
+    align-items: center;
+
+    .banner-tab {
+        border: 2px solid #1E1EF7;
+        cursor: pointer;
+        padding: 11px 35px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.62;
+        text-align: center;
+
+        &:hover {
+            background: #DDE0EB;
+            box-shadow: 0px 2px 30px rgba(26, 85, 246, 0.4);
+        }
+
+        &:not(:last-child) {
+            border-right: none;
+        }
+
+        &.active {
+            background: #1E1EF7;
+            box-shadow: 0px 2px 30px rgba(26, 85, 246, 0.4);
+            color: #fff;
+        }
+    }
+}
+
+.banner {
+    width: 100%;
+    border: 1px solid #ebf0fe;
+    padding-top: 170px;
+    padding-left: 50px;
+    padding-right: 32px;
+    padding-bottom: 43px;
+    margin-bottom: 60px;
+
+    background-color: #000;
+    background-image: url('/static/dist/aiijc/images/bg-banner.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-origin: border-box;
+
+    h2 {
+        margin-bottom: 40px;
+        color: #fff;
+
+        font-family: 'Nekst';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 60px;
+        line-height: 1;
+
+        span {
+            color: #1E1EF7;
+        }
+    }
+
+    p {
+        color: #fff;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .btn {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+            margin-right: 10px;
+        }
+    }
+
+    &.stage2 {
+        background-image: url("/static/dist/aiijc/images/bg-banner-heart.png"), url('/static/dist/aiijc/images/bg-banner.svg');
+        background-position: 93% 28%, center top;
+        background-size: auto, cover;
+
+        h2 {
+            span {
+            }
+        }
+
+        p {
+        }
+    }
+
+    &.stage3 {
+        background-image: url("/static/dist/aiijc/images/bg-banner-butterfly.svg"), url('/static/dist/aiijc/images/bg-banner.svg');
+        background-position: 93% 35%, center top;
+        background-size: auto, cover;
+
+        padding-top: 170px;
+        padding-bottom: 42px;
+
+        h2 {
+            span {
+            }
+        }
+
+        p {
+            max-width: 695px;
+        }
+    }
+}
+
+@media (max-width: 1250px) {
+    .banner-tabs {
+        width: 100%;
+
+        .banner-tab {
+            flex-grow: 1;
+        }
+    }
+
+    .container {
+        &.banner-container {
+            flex-wrap: wrap;
+            padding-top: 30px;
+            padding-bottom: 30px;
+
+            .banner-tabs {
+                order: 2;
+            }
+
+            .socialLinksBlock {
+                order: 1;
+                margin-bottom: 25px;
+            }
+        }
+    }
+
+    .banner {
+        h2 {
+            font-size: 32px;
+            line-height: 1.11;
+        }
+        &.stage2 {
+            background-size: 33%, cover;
+            background-position: 98% 14%, center top;
+        }
+        &.stage3 {
+            background-size: 33%, cover;
+            background-position: 91% 28%, center top;
+        }
+    }
+}
+
+@media (max-width: 1070px) {
+    .banner {
+        h2 {
+            font-size: 56px;
+            line-height: 1.11;
+        }
+    }
+}
+
+@media (max-width: 968px) {
+    .banner {
+        h2 {
+            font-size: 42px;
+            line-height: 1.11;
+        }
+    }
+}
+
+@media (max-width: 840px) {
+    .banner {
+        padding-left: 30px;
+        padding-bottom: 24px;
+        h2 {
+            font-size: 36px;
+            line-height: 1.11;
+        }
+        p {
+            font-size: 14px;
+            line-height: 1.43;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .banner-tabs {
+        flex-direction: column;
+        margin: 0;
+
+        .banner-tab {
+            padding: 12px 15px;
+            flex-grow: 1;
+            width: 100%;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 1.5;
+
+            &.active {
+                box-shadow: 0px 2px 20px rgba(26, 85, 246, 0.3);
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 5px;
+                border-right: 2px solid #1E1EF7;
+            }
+        }
+    }
+    .banner {
+        background-image: url('/static/dist/aiijc/images/bg-banner-mobile.svg');
+        background-position: top;
+        padding-left: 18px;
+        padding-bottom: 15px;
+        padding-right: 16px;
+        padding-top: 60px;
+
+        h2 {
+            font-size: 24px;
+            line-height: 1.08;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 12px;
+            line-height: 1.5;
+        }
+        .btn {
+            max-width: initial;
+            margin-top: 15px;
+        }
+
+        &.stage2 {
+            background-size: 150px, cover;
+            background-position: 93% 10%, center top;
+        }
+
+        &.stage3 {
+            background-size: 211px, cover;
+            background-position: 93% 33%, center top;
+            padding: inherit;
+            padding-top: 63px;
+        }
+    }
+    .container {
+        &.banner-container {
+
+            .banner-tabs {
+                order: 1;
+            }
+
+            .socialLinksBlock {
+                order: 2;
+                margin-top: 20px;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .banner {
+        h2 {
+            font-size: 28px;
+            line-height: 1.05;
+        }
+        p {
+            font-size: 12px;
+            line-height: 1.5;
+        }
+    }
+}
+
+@media (max-width: 315px) {
+    .banner {
+        background-size: cover;
+    }
+    .container {
+        &.banner-container {
+
+            .socialLinksBlock {
+                flex-wrap: wrap;
+            }
+        }
+    }
+}

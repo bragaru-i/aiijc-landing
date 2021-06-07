@@ -1,0 +1,233 @@
+.container {
+    margin-top: 14px;
+    font-family: Nekst;
+    font-style: normal;
+    background: #e6eaf5;
+    font-weight: 600;
+    border: 2px solid #000000;
+}
+.edit-buttons {
+    background: #e6ebf7;
+    font-family: Nekst;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
+    color: #919399;
+    padding: 16px 0;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px #d1d3db solid;
+    & > :last-child {
+        margin-left: 20px;
+    }
+    .button {
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        .ico {
+            margin-right: 10px;
+        }
+    }
+}
+
+.body {
+    padding: 20px 0 26px 20px;
+}
+.avatar-container {
+    display: flex;
+    flex-direction: column;
+}
+.user-info {
+    position: relative;
+    margin-top: 10px;
+}
+.name {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: #000000;
+    padding-right: 40px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.user-bio {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+
+    &-rowWrapper:not(:first-child) {
+        margin-top: 15px;
+    }
+    &-rowWrapper {
+        display: flex;
+        font-family: Nekst;
+        font-style: normal;
+        font-size: 12px;
+        line-height: 15px;
+        color: #919399;
+    }
+
+    &-rowWrapper:last-child {
+        display: block;
+        .user-bio__type {
+            display: inline-block;
+        }
+    }
+    &__type {
+        margin-right: 5px;
+        font-weight: 600;
+        color: #b6b8bf;
+    }
+    &__content {
+        margin-right: 5px;
+        font-weight: 600;
+        color: #919399;
+    }
+}
+.social-links {
+    margin-top: 15px;
+
+    & > * {
+        margin-right: 12px;
+    }
+
+    & > *:last-child {
+        margin-right: unset;
+    }
+
+    &_ico {
+        transition-duration: 0.3s;
+        width: 24px;
+        cursor: pointer;
+        path {
+            transition-duration: 0.3s;
+            fill: #c2c4cc;
+        }
+        &:hover {
+            path {
+                fill: #1e1ef7;
+            }
+        }
+    }
+    &_ico:not(:first-child) {
+        margin-left: 12px;
+    }
+}
+
+@media (min-width: 667px) {
+    .body {
+        padding: 50px 37px 43px 51px;
+    }
+    .avatar-container {
+        flex-direction: row;
+    }
+    .name {
+        font-weight: 600;
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .edit-buttons {
+        background: unset;
+        font-size: 14px;
+        line-height: 22px;
+        color: #919399;
+        justify-content: flex-start;
+        padding-bottom: 41px;
+        & > :last-child {
+            margin-left: 32px;
+        }
+        .button {
+            &:hover {
+                color: #1e1ef7;
+            }
+            .ico {
+                margin-right: 19px;
+                width: 24px;
+                path {
+                    fill: currentColor;
+                }
+            }
+        }
+    }
+    .user-info {
+        width: calc(100% - 228px);
+        margin-left: 50px;
+        margin-top: -10px;
+        padding-right: unset;
+    }
+    .user-bio {
+        font-weight: 600;
+
+        margin-top: 40px;
+
+        &-rowWrapper:not(:first-child) {
+            margin-top: 8px;
+        }
+        &-rowWrapper {
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+    .social-links {
+        display: flex;
+        width: 100%;
+        &_ico {
+            width: 48px;
+        }
+    }
+}
+
+@media (min-width: 668px) and (max-width: 710px) {
+    .edit-buttons {
+        & > :last-child {
+            margin-left: 5px;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .user-info {
+        .name {
+            font-size: 35px;
+            line-height: 45px;
+        }
+    }
+    .edit-buttons {
+        display: inline-flex;
+        padding: 25px 0 40px 0;
+        font-size: 14px;
+        line-height: 22px;
+        color: #919399;
+        border-bottom: 1px #cfd1d9 solid;
+        & > :last-child {
+            margin-right: 42px;
+        }
+    }
+
+    .user-bio {
+        margin-top: 40px;
+        &-rowWrapper {
+            max-width: 330px;
+        }
+        &__type {
+            font-size: 14px;
+            line-height: 22px;
+            color: #b6b8bf;
+        }
+        &__content {
+            font-size: 14px;
+            line-height: 22px;
+            color: #919399;
+        }
+    }
+    .social-links {
+        margin-top: 40px;
+
+        &_ico {
+            width: 50px;
+        }
+    }
+}

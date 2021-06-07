@@ -1,0 +1,162 @@
+$cellsize: 96px;
+$cellpadd: 95px;
+.testimonials {
+    z-index: 2;
+    background-size: $cellsize $cellsize;
+    height:1056px;
+    border-bottom: 1px #5f5f5f solid;
+    background-image: repeating-linear-gradient(
+            0deg,
+            transparent,
+            transparent $cellpadd,
+            #5f5f5f $cellpadd,
+            #5f5f5f $cellsize
+        ),
+        repeating-linear-gradient(-90deg, transparent, transparent $cellpadd, #5f5f5f $cellpadd, #5f5f5f $cellsize);
+    background-position: cover;
+
+    &-info {
+        padding-top: 119px;
+
+        &-box-items {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin-top: 52px;
+            &--en{
+                margin-top: 32px;
+            }
+        }
+        &-box {
+            font-feature-settings: 'salt' on;
+            color: #000000;
+            height: 254px;
+            position: relative;
+            background: #ffffff;
+            border: 1px solid #5f5f5f;
+            box-sizing: border-box;
+            padding: 12px 16px 0 16px;
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+
+            &__title {
+                font-family: Nekst;
+                font-style: normal;
+                font-weight: 600;
+                font-size: 20px;
+                line-height: 28px;
+            }
+            &__msg {
+                font-family: Nekst;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 24px;
+                margin-top: 14px;
+            }
+            &__img {
+                position: absolute;
+                right: 0;
+                bottom: -32px;
+                width: 136px;
+            }
+        }
+        &--en{
+            padding-top: 103px;
+
+        }
+    }
+}
+
+@media (min-width: 650px) {
+    .testimonials {
+        height: 864px;
+        &-info {
+            padding-top: 200px;
+            &-box-items {
+                margin-top: 55px;
+            }
+            &-box {
+                height: 144px;
+                padding: 16px 0 0 16px;
+                &__title {
+                    br {
+                        display: none;
+                    }
+                }
+                &__msg {
+                    padding-right: 140px;
+                    margin-top: 8px;
+                }
+                &__img {
+                    right: 0;
+                    top: 0;
+                    width: 144px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1260px) {
+    $cellsize-lg: 120px;
+    $cellpadd-lg: 119px;
+    .testimonials {
+        border-bottom: 1px #5F5F5F solid;
+        height: 720px;
+        background-size: $cellsize-lg $cellsize-lg;
+        background-image: repeating-linear-gradient(
+                0deg,
+                transparent,
+                transparent $cellpadd-lg,
+                #5f5f5f $cellpadd-lg,
+                #5f5f5f $cellsize-lg
+            ),
+            repeating-linear-gradient(
+                -90deg,
+                transparent,
+                transparent $cellpadd-lg,
+                #5f5f5f $cellpadd-lg,
+                #5f5f5f $cellsize-lg
+            );
+        background-position: cover;
+        &-info {
+            padding-top: 257px;
+            &-box-items {
+                margin-top: 54px;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            &-box {
+                width: 368px;
+                height: 368px;
+                padding: 14px 0 24px 24px;
+
+                &:not(:last-child) {
+                    margin-bottom: unset;
+                }
+
+                &__title {
+                    font-size: 24px;
+                    line-height: 32px;
+                    br {
+                        display: block;
+                    }
+                }
+                &__msg {
+                    font-size: 20px;
+                    line-height: 24px;
+                    padding-right: 24px;
+                    margin-top: 14px;
+                }
+                &__img {
+                    right: 0;
+                    top:unset;
+                    bottom: -80px;
+                    width: 240px;
+                }
+            }
+        }
+    }
+}

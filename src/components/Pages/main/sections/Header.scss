@@ -1,0 +1,520 @@
+.header {
+    background-color: #000;
+    color: #fff;
+
+    &.mainPage {
+        background-image: url("/static/dist/aiijc/images/bg-header.svg");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+    }
+
+    .container {
+        max-width: 1440px;
+        min-height: 100px;
+        display: flex;
+        align-items: center;
+
+        .logo {
+            flex-shrink: 0;
+        }
+
+        .lang {
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 1.25;
+            margin-left: auto;
+            margin-right: 50px;
+
+            ul {
+                display: flex;
+
+                li {
+                    color: #808080;
+                    cursor: pointer;
+
+                    &:not(:last-child) {
+                        margin-right: 15px;
+                    }
+
+                    &:hover {
+                        color: #1a55f6;
+                    }
+
+                    &.active {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+        .menu {
+            margin-left: auto;
+            margin-right: 45px;
+
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                align-items: center;
+
+                li:not(:last-child) {
+                    margin-right: 30px;
+                }
+
+                li {
+                    a {
+                        padding-bottom: 6px;
+                        text-decoration: none;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 1.25;
+                        color: #fff;
+                        transition: color 250ms;
+
+                        svg path {
+                            transition: fill 250ms;
+                        }
+
+                        &:hover {
+                            color: #0000FF;
+
+                            svg path {
+                                fill: #0000FF;
+                            }
+                        }
+
+                        &.active {
+                            color: #1E1EF7;
+                            border-bottom: 2px solid #1E1EF7;
+
+                            svg path {
+                                fill: #1E1EF7;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+
+            .btn.primary {
+                margin-right: 10px;
+            }
+
+            .login-btn {
+                display: flex;
+                align-items: center;
+                vertical-align: middle;
+                color: #FFFFFF;
+                background: none;
+                border: transparent;
+
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 24px;
+                    height: 24px;
+                    margin-left: 20px;
+                    background-color: transparent;
+                    background-image: url("/static/dist/aiijc/images/login-btn.svg");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+            }
+
+            .login-btn-mobile {
+                display: none;
+            }
+
+            .user {
+                min-width: 210px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .avatar {
+                    height: 40px;
+                    margin-right: 25px;
+
+                    img {
+                        max-width: 100%;
+                        max-height: 100%;
+                        border-radius: 5px;
+                    }
+                }
+
+                .user-login {
+                    max-width: 145px;
+                    cursor: default;
+                    min-width: 145px;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 1.25;
+                    margin-bottom: 9px;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    text-decoration: none;
+                }
+
+                .user-buttons {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    a {
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: #808080;
+
+                        &:hover {
+                            color: #0000FF;
+                        }
+                    }
+
+                    .user-logout-btn {
+                        color: #808080;
+                        height: 20px;
+                        cursor: pointer;
+                        background: none;
+                        border: none;
+                        padding: 0;
+
+                        &:hover {
+                            color: #0000FF;
+                        }
+                    }
+                }
+
+
+            }
+        }
+
+        .burger {
+            display: none;
+        }
+    }
+
+    &.loggined {
+        .lang {
+            margin-left: 40px;
+            margin-right: 0;
+        }
+
+        .menu {
+            margin-left: auto;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .header {
+        .container {
+            flex-wrap: wrap;
+
+            .logo {
+                a {
+                    display: flex;
+                    align-items: center;
+                }
+            }
+
+            .lang {
+                font-size: 12px;
+                line-height: 1.67;
+                min-height: inherit;
+                display: flex;
+                align-items: center;
+                margin-left: auto;
+                margin-right: 33px;
+            }
+
+            .profile {
+                margin-left: 0;
+                .btn {
+                    font-size: 12px;
+                    line-height: 18px;
+                    padding: 9px 25px;
+                }
+                .btn.primary {
+                    margin-right: 0;
+                }
+            }
+
+            .horizontal-row {
+                .headline {
+                    justify-content: flex-start;
+                }
+            }
+        }
+
+        &.loggined {
+            .lang {
+                margin-left: 37px;
+            }
+
+            .menu,
+            .profile {
+                display: none;
+            }
+
+            .burger {
+                display: block;
+                padding: 16px 24px;
+                min-height: inherit;
+                margin-left: auto;
+                background-image: url('/static/dist/aiijc/images/burger.svg');
+                background-repeat: no-repeat;
+                background-position: right center;
+            }
+        }
+        &.loggined.burgerOpened {
+            background-color: #fff;
+            background-image: none;
+            top: 0;
+            position: fixed;
+            z-index: 10;
+            width: 100%;
+
+            .container {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+                background-color: #000;
+            }
+
+            .logo {
+                margin-left: 30px;
+            }
+
+            .lang {
+                order: 0;
+                display: flex;
+            }
+            .profile {
+                order: 2;
+                display: flex;
+                padding: 20px 31px;
+                margin-right: 0;
+                background-color: #ebf0fe;
+                width: 100% !important;
+
+                .user {
+                    justify-content: flex-start;
+                    width: 100%;
+
+                    .avatar {
+                        margin-right: 25px;
+
+                        svg {
+                            border-radius: 30px;
+                            border: 1px solid #fff;
+                            rect {
+                                fill: #fff;
+                            }
+                        }
+                    }
+
+                    .user-info {
+                        width: 100%;
+
+                        .user-login {
+                            color: #000000
+                        }
+                    }
+                }
+
+                .btn {
+                    width: initial;
+                }
+            }
+
+            .menu {
+                display: block;
+                align-items: flex-start;
+                margin-right: 0;
+                min-height: 100vh;
+                padding: 58px 31px;
+                overflow-y: auto;
+                order: 3;
+                background-color: #ffffff;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                bottom: 0;
+
+                ul {
+                    margin: 0 auto;
+                    flex-direction: column;
+                    align-items: flex-start !important;
+
+                    li {
+                        &:not(:last-child) {
+                            margin-right: 0 !important;
+                        }
+
+                        &:not(:last-child) {
+                            margin-bottom: 40px;
+                        }
+
+                        a {
+                            font-size: 24px;
+                            line-height: 0.83;
+                            color: #000000;
+
+                            &.active {
+                                border-bottom: none;
+                                color: #1A55F6;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .burger {
+                order: 1;
+                margin-left: auto;
+                margin-right: 30px;
+                background-image: url('/static/dist/aiijc/images/burger-x.svg');
+            }
+
+            .horizontal-row {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        .container {
+            min-height: 44px;
+
+            .logo {
+                max-width: 139px;
+            }
+
+            .menu {
+                margin-right: 20px;
+
+                ul {
+                    li {
+
+                        a {
+                            font-size: 14px;
+                            line-height: 1.43;
+                        }
+                    }
+                }
+            }
+
+            .profile {
+                .btn{
+                    display: none;
+                }
+                .login-btn-mobile {
+                    display: block;
+                    &::after {
+                        margin-left: 0;
+                    }
+                }
+                .user {
+                    flex-direction: row;
+                    align-items: center;
+
+                    .user-login {
+                        margin-bottom: 5px;
+                        margin-right: 20px;
+                        font-size: 14px;
+                    }
+                }
+            }
+
+            .profile .btn.primary {
+                margin-right: 0;
+            }
+        }
+
+        &.loggined {
+            .lang {
+                display: none;
+            }
+            .burger {
+                background-position: right center;
+            }
+        }
+
+        &.loggined.burgerOpened {
+            .logo {
+                margin-left: 16px;
+            }
+            .btn {
+                display: block;
+            }
+            .burger {
+                margin-right: 16px;
+            }
+            .profile, .menu {
+                padding-left: 16px;
+                padding-right: 16px;
+            }
+        }
+    }
+}
+
+@media (max-width: 440px) {
+    .header {
+        .container {
+            .lang {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}
+
+@media (max-width: 340px) {
+    .header {
+        .container {
+            flex-wrap: nowrap;
+
+            .logo {
+                flex-shrink: 1;
+            }
+            .lang {
+                display: none;
+            }
+            .profile {
+                margin-left: auto;
+                flex-shrink: 1;
+                .login-btn-mobile {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+            }
+        }
+
+        &.loggined {
+            .container {
+                flex-wrap: wrap;
+            }
+        }
+
+        &.loggined.burgerOpened {
+            .burger {
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .lang {
+                display: none;
+            }
+        }
+    }
+}

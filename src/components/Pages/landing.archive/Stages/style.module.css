@@ -1,0 +1,137 @@
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: var(--width-container);
+    padding: var(--padding-container);
+}
+
+.text {
+    margin-left: 72px;
+}
+
+.title {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.subTitle {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 36px;
+    color: #000000;
+}
+
+.subSubTitle {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.stage {
+    display: flex;
+    align-items: center;
+    padding-left: 3.8%;
+}
+
+.stage {
+    display: flex;
+    align-items: center;
+    padding-left: 3.8%;
+}
+
+.lines {
+    width: 100%;
+    height: auto;
+    margin-top: -4px;
+    position: relative;
+    z-index: 1;
+    margin-bottom: -8px;
+}
+
+@media (max-width: 991px) {
+    .lines {
+        display: none;
+    }
+
+    .stage {
+        margin-bottom: 40px;
+    }
+
+    .text {
+        margin-left: 32px;
+    }
+
+    .stages {
+        margin-top: 96px;
+        margin-bottom: 96px;
+    }
+
+    .stage {
+        padding-left: 0;
+    }
+
+    .container {
+        margin-bottom: 120px;
+    }
+}
+
+@media (max-width: 768px) {
+    .stages {
+        position: relative;
+        left: calc(-2px - var(--padding-container-right-left));
+        margin-top: 64px;
+        margin-bottom: 64px;
+    }
+
+    .stage {
+        align-items: flex-start;
+    }
+
+    .container {
+        margin-bottom: 96px;
+    }
+}
+
+@media (max-width: 410px) {
+    .title {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .subTitle {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .subSubTitle {
+        margin-top: 32px;
+        font-size: 16px;
+        line-height: 24px;
+        position: relative;
+        width: calc(100% + 68px);
+        right: 68px;
+    }
+
+    .stages {
+        margin-top: 48px;
+        margin-bottom: 48px;
+    }
+
+    .text {
+        margin-left: 16px;
+    }
+
+    .container {
+        margin-bottom: 80px;
+    }
+}

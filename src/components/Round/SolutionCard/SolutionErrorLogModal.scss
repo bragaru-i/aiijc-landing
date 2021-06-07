@@ -1,0 +1,32 @@
+.jqmOverlay .modal.SolutionErrorLogModal .modal-inner {
+    padding: 24px 0 0 0;
+    max-width: 980px;
+
+    pre {
+        margin: 0;
+        padding: 0;
+        border: none;
+        padding-bottom: 20px;
+        white-space: pre-wrap;
+    }
+}
+
+.jqmOverlay .modal.SolutionErrorLogModal .modal-inner .modal-header {
+    border-bottom: 1px solid #EBF0FE;
+    padding-left: 30px;
+    padding-bottom: 20px;
+}
+
+.jqmOverlay .modal.SolutionErrorLogModal .modal-inner .modal-content {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.jqmOverlay .modal.SolutionErrorLogModal .modal-inner .modal-header h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.37;
+}

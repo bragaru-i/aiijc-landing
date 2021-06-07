@@ -1,0 +1,133 @@
+.logoGreenPart {
+    padding-top: 7px;
+    width: 139px;
+    height: auto;
+}
+
+.right {
+    display: flex;
+}
+button {
+    padding: 0;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    background: black;
+    border: none;
+    font-family: Nekst;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #000000;
+    cursor: pointer;
+    outline: none;
+    transition-duration: var(--transition-duration);
+    
+}
+
+.loginIcon path {
+    transition-duration: var(--transition-duration);
+}
+.loginIcon:active {
+    fill: none;
+}
+
+.login:hover,
+.login:focus {
+    color: #1a55f6;
+}
+
+.login:hover .loginIcon path,
+.login:focus .loginIcon path {
+    fill: #1a55f6;
+}
+
+.login:active .loginIcon path {
+    fill: #1745c2;
+}
+
+.login:active {
+    color: #1745c2;
+}
+
+.loginIcon {
+    margin-left: 14px;
+}
+
+.containerBlack {
+    padding: 0 16px;
+    background-color: #000;
+    height: 52px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .loginText {
+        color: #fff;
+    }
+    .login:hover .loginIcon path,
+    .login:focus .loginIcon path {
+        fill: none;
+        color: #1e1ef6;
+        stroke: #1e1ef6;
+    }
+    .login:hover .loginText,
+    .login:focus .loginText {
+        color: #1e1ef6;
+    }
+}
+@media (max-width: 991px) {
+    .container {
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    .loginText {
+        display: none;
+    }
+
+    .loginIcon {
+        margin-left: 0;
+    }
+
+    .hide-on-mobile {
+        display: none;
+    }
+    .login {
+        margin-left: 33px;
+        padding-left: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .logoGreenPart {
+        width: 210px;
+        padding-top: 6px;
+    }
+    .containerBlack {
+        height: 64px;
+    }
+    .loginText {
+        margin-left: 32px;
+    }
+    .hide-on-mobile {
+        margin-left: 32px;
+    }
+}
+@media (min-width: 1200px) {
+    .wrapper {
+        display: flex;
+        width: 100%;
+        background-color: #000;
+        justify-content: center;
+    }
+    .containerBlack {
+        width: 1200px;
+    }
+}

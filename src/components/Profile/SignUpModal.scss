@@ -1,0 +1,21 @@
+.SignUpModal {
+  div.checkbox {
+    display: flex;
+    align-items: flex-start;
+
+    .checkbox__label {
+      margin-left: 20px;
+    }
+
+    input {
+      margin-right: 0;
+      margin-top: 7px;
+    }
+  }
+
+  .error {
+    p {
+      margin-top: 0;
+    }
+  }
+}

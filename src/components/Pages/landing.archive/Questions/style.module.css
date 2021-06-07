@@ -1,0 +1,132 @@
+.wrapper {
+    margin-top: 138px;
+    position: relative;
+    color: #fff;
+}
+.container {
+    margin-right: auto;
+    margin-left: auto;
+   
+    position: relative;
+}
+
+.question {
+    padding: 32px 40px;
+    border-bottom: 2px solid #000000;
+    cursor: pointer;
+}
+
+.questions {
+    background: #000000;
+    box-shadow: inset 0px -1px 0px #5f5f5f;
+}
+
+.question:last-child {
+    border-bottom: unset;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 40px;
+    color: #fff;
+    user-select: none;
+    margin-bottom: 12px;
+}
+
+.arrow {
+    transition-duration: var(--transition-duration);
+    min-width: 36px;
+    margin-left: 10px;
+}
+
+.selected .arrow {
+    transform: rotate(180deg);
+}
+
+.body {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    color: #fff;
+    overflow: hidden;
+    transition-duration: 0.3s;
+}
+
+.lines {
+    width: 100%;
+    height: auto;
+    padding-left: 5%;
+    margin-top: -4px;
+    margin-bottom: -8px;
+    position: relative;
+    z-index: 1;
+}
+
+.bottomLines {
+    margin-bottom: -10px;
+    margin-top: 0;
+}
+
+@media (max-width: 991px) {
+    .lines,
+    .bottomLines {
+        display: none;
+    }
+
+    .questions {
+        margin-top: 96px;
+        margin-bottom: 120px;
+    }
+}
+
+@media (max-width: 768px) {
+    .arrow {
+        transform: scale(0.7);
+    }
+
+    .selected .arrow {
+        transform: scale(0.7) rotate(180deg);
+    }
+
+    .questions {
+        margin-top: 64px;
+        margin-bottom: 96px;
+    }
+}
+
+@media (max-width: 410px) {
+    .question {
+        padding: 24px;
+    }
+
+    .header {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .body {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .questions {
+        margin-top: 48px;
+        margin-bottom: 80px;
+    }
+
+    .wrapper {
+        top: 56px;
+    }
+
+    .container {
+        top: -56px;
+    }
+}

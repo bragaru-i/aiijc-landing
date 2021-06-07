@@ -1,0 +1,45 @@
+.pagination {
+    display: flex;
+    align-items: center;
+
+    .pagination__pages {
+        display: flex;
+        align-items: center;
+    }
+
+    a, span {
+        display: block;
+        text-decoration: none;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: #858da6;
+    }
+
+    .pagination__previous,
+    .pagination__spacer,
+    a {
+        margin-right: 10px;
+    }
+
+    a.active {
+        color: #1A55F6;
+    }
+
+    .pagination__previous,
+    .pagination__next {
+        width: 18px;
+        height: 18px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .pagination__previous {
+        background-image: url('/static/dist/aiijc/images/chevron-left.svg');
+    }
+
+    .pagination__next {
+        background-image: url('/static/dist/aiijc/images/paginator-chevron-right.svg');
+    }
+}

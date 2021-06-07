@@ -1,0 +1,30 @@
+.back-btn1 {
+    text-decoration: none;
+    display: inline-flex;
+    font-family: Nekst;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 18px;
+    align-items: center;
+    color: #858da6;
+    cursor: pointer;
+    &::before {
+        content: '';
+        display: block;
+        margin-right: 16px;
+        width: 12px;
+        height: 18px;
+        background-image: url('/static/dist/aiijc/images/chevron-left.svg');
+    }
+}
+
+@media (min-width: 768px) {
+    .back-btn1 {
+        font-size: 14px;
+        line-height: 26px;
+        &::before {
+            margin-right: 17px;
+        }
+    }
+}
